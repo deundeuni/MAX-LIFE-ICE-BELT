@@ -1,7 +1,7 @@
-# MAX-LIFE ICE-BELT — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적 따개비·홍합·굴 자가재생 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (Ver. 1.3 최종 교정본)
+# MAX-LIFE ICE-BELT — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적 따개비·홍합·굴 자가재생 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (Ver. 1.4 최종 교정본)
 
 * 공식 문서 분류: 방어적 선행기술 공개 백서 (Defensive Publication / Prior Art)
-* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.3): 2026-09-05
+* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.4): 2026-09-05
 * 원천 지적재산권(IP) 보유자: 소마모아 (soma-moa / 구상자: deundeuni)
 * 공식 저장소: github.com/soma-moa | 공식 도메인: somamoa.ai.kr
 * 적용 라이선스: CC BY 4.0 & DPL v1.0 (Defensive Patent License)
@@ -35,8 +35,10 @@
 ### 0.7 공개 목적 및 환경 안전성 한계 고지
 본 문서는 사적 독점권 설정을 방지하고 기술의 공공성을 확립하기 위한 방어적 선행기술 공개(Defensive Publication) 자료이다. 명세서 내 수치, 기능, 물리적 구성, 예상 성능 서술은 기술 사상을 설명하기 위한 예시적 서술이며 특정 실제 구현 형태를 일률적으로 한정하거나 절대적 성능 수치를 보장하지 않는다. 본 시스템은 기존 법정 선급 검사 기준, 해양환경오염방지협약(MARPOL), 국제해사기구(IMO) 방오 규정을 자동 대체·변경·확장하지 않으며 보조적·참고적 보호 구조체로서만 활용된다. 본 희생층은 따개비, 홍합, 굴 기원의 탄산칼슘($CaCO_3$) 기반 생물 무기질을 주요 성분으로 포함하여, 합성수지계 미세플라스틱(Microplastic) 유출을 완화하도록 설계된다. 탈락 시 해양에서 자연 분해되는 천연 탄산칼슘 입자로서 IMO AFS 협약 및 EU 해양전략 프레임워크(MSFD) 규제 대응을 보조하는 환경 친화적 특성을 지향한다.
 
-### 0.8 독립적 선행 구상 인정 및 겸양 고지
-본 시스템 설계는 창안자 개인이 독자적으로 도출한 아이디어에 기반하나, 동일하거나 유사한 기술적 모티프가 타 연구자 또는 산업 현장에서 독립적으로 구상되었을 가능성을 배제하지 않는다. 본 공개의 목적은 특정 주체의 배타적 특허 독점권을 확보하는 것이 아니며, 기술 내역을 공공의 선행기술(Prior Art)로 정식 등록하여 타 주체의 사적 독점 출원 시 신규성·진보성 부정의 거절 근거를 제공하는 데 있다. 한국어 원문이 기준 원본(Original Authority)이며, 타 언어 번역본에서 의미상 충돌이나 해석 차이 발생 시 한국어 원문의 서술과 정의를 최우선 기준으로 적용한다.
+### 0.8 독립적 선행 구상 인정 및 겸양 고지 (v1.4 삼중 방어 조항)
+본 시스템 설계는 창안자가 현장 문제의식에서 출발하여 기존 공개된 원리 및 공지기술($CaCO_3$ 생물광물화, 희생 양극, 자동차 크럼플존 등)이 이미 존재하는지 여부를 확인·검토한 후, 창안자 개인의 관점에서 "나는 이렇게 생각했다"는 방식으로 조합·재구성한 것이다.
+"본인이 혼자 최초로 독자 구상했다"고 주장하지 않으며, 동일하거나 유사한 기술적 모티프가 타 연구자 또는 산업 현장에서 독립적으로 구상되었을 가능성을 충분히 인정한다.
+본 공개의 목적은 특정 주체의 배타적 특허 독점권 확보가 아니며, 기술 내역을 공공의 선행기술(Prior Art)로 등록하여 타 주체의 사적 독점 출원 시 신규성·진보성 부정의 거절 근거를 제공하는 데 있다. 한국어 원문이 기준 원본(Original Authority)이며, 타 언어 번역본에서 의미상 충돌이나 해석 차이 발생 시 한국어 원문의 서술과 정의를 최우선 기준으로 적용한다.
 
 ---
 
@@ -46,6 +48,7 @@
 * v1.1 (2026-09-03): IMO AFS 및 EU MSFD 해양 환경 규제 대응을 위한 탈락 희생층의 천연 탄산칼슘($CaCO_3$) 성분 고지, 미세플라스틱 완화 명세, 동적 충격 흡수 감쇄식 및 생물 자가재생 성장 방정식 정형화 수식 보완.
 * v1.2 (2026-09-03): 항공/헬기 로터 블레이드 확장에 따른 회전 불균형 완화 대칭 자율 박리(Self-balancing Ablation) 명세 및 무공구 퀵 릴리즈 교체(Zero-Tool Quick Replacement) 메커니즘 통합. 추상화된 가변 파라미터 수식 정비 및 방어적 표현 엄격화.
 * v1.3 (2026-09-05): 석회질 부착 생물군(따개비, 홍합, 굴 등) 키워드 명시적 확장, 특허 심사관 검색 대응성 강화 및 L1 희생층 정의 상위 포괄화 패치.
+* v1.4 (2026-09-05): 0.8절 창안자 삼중 방어 조항(선행기술 조사 확인, 최초/독점 미주장, 주관적 관점의 조합·재구성 명시) 정교화 패치.
 
 ---
 
@@ -148,6 +151,7 @@
 * Version 1.1 (2026-09-03): CaCO3-based biogenic sacrificial layer specification & mathematical formulation.
 * Version 1.2 (2026-09-03): Aero-rotor self-balancing ablation & zero-tool quick replacement integration. Mathematical parameter generalization & strict defensive terminology alignment.
 * Version 1.3 (2026-09-05): Explicit inclusion of mussels, oysters, and sessile marine organism keywords for enhanced prior art searchability & generalized L1 layer definition.
+* Version 1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause (prior art check confirmation, non-monopoly/non-exclusive claim, and personal perspective combination declaration).
 
 ## Appendix C: AI Assistance Disclosure
 * Draft Generation: Meta AI / Structure Optimization: Google Gemini / Final Audit: Anthropic Claude
@@ -160,7 +164,7 @@ authors:
   - family-names: "deundeuni"
     given-names: "soma-moa"
 title: "MAX-LIFE ICE-BELT: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
-version: "1.3"
+version: "1.4"
 date-released: 2026-09-05
 url: "[https://github.com/soma-moa/MAX-LIFE-ICE-BELT](https://github.com/soma-moa/MAX-LIFE-ICE-BELT)"
 keywords:
