@@ -1,7 +1,7 @@
-# MAX-LIFE ICE-BELT — Clamping Scaffold, Intentional Sacrificial Bio-Armor, and Aero-Rotor Ablative System Technical Specification for Splash Belts, Bow, and Stern of Icebreakers and Marine Contact Structures (Ver. 1.2 Final Revision)
+# MAX-LIFE ICE-BELT — Clamping Scaffold, Intentional Sacrificial Bio-Armor (Barnacles, Mussels, Oysters), and Aero-Rotor Ablative System Technical Specification for Splash Belts, Bow, and Stern of Icebreakers and Marine Contact Structures (Ver. 1.3 Final Revision)
 
 * Official Classification: Defensive Publication / Prior Art White Paper
-* Initial Concept Date: 2026-09-02 / Final Revision Date (v1.2): 2026-09-03
+* Initial Concept Date: 2026-09-02 / Final Revision Date (v1.3): 2026-09-05
 * Primary IP Holder: soma-moa (Architect: deundeuni)
 * Official Repository: github.com/soma-moa | Official Domain: somamoa.ai.kr
 * Applicable Licenses: CC BY 4.0 & DPL v1.0 (Defensive Patent License)
@@ -13,11 +13,11 @@
 
 ### 0.1 Field-Driven Motivation
 This structural design originates from a field-driven observation: "Outer deck splash zones and the bow and stern of icebreakers are constantly eroded and damaged; painting and steel plate replacement cannot endlessly address this issue."
-Conventional marine anti-fouling technologies treat adhering organisms, such as barnacles, purely as targets for removal and prevention. This invention reverses that perspective, redefining adhering organisms as a "Sacrificial Layer" that intentionally fractures upon impact to absorb mechanical energy and friction forces. Consequently, a 'survival armor' mechanism was formulated where the internal mechanical skeleton remains intact even after the sacrificial layer fractures, allowing the surface biological layer to continuously self-regenerate. By adopting the non-welding rolling and clamping attachment structure validated in the CWP battery swap system as the underlying scaffold, a survival-focused protective structure is established without requiring direct welding on the vessel's primary hull or structure surfaces.
+Conventional marine anti-fouling technologies treat adhering organisms—such as barnacles, mussels, and oysters—purely as targets for removal and prevention. This invention reverses that perspective, redefining adhering organisms as a "Sacrificial Layer" that intentionally fractures upon impact to absorb mechanical energy and friction forces. Consequently, a 'survival armor' mechanism was formulated where the internal mechanical skeleton remains intact even after the sacrificial layer fractures, allowing the surface biological layer to continuously self-regenerate. By adopting the non-welding rolling and clamping attachment structure validated in the CWP battery swap system as the underlying scaffold, a survival-focused protective structure is established without requiring direct welding on the vessel's primary hull or structure surfaces.
 
 ### 0.2 Master Concept & Material Fusion Standard
 The zero-point clamping scaffold fastening method and the sacrificial bio-regeneration mechanism disclosed in this specification function as the Master Reference Framework for the entire protection system.
-This design expands upon the public-domain automotive passive safety architecture (Béla Barényi, 1951) by translating structural sacrifice into marine and aeronautical applications. Any extended implementations—including variations in scaffold material (steel, aluminum alloy, FRP composites, high-corrosion-resistant alloys), biological attraction methods (surface roughness control, micro-current application, biochemical attractant coating), bio-layer thickness ranges, clamping mechanisms (bolting, rolling lock, permanent/electromagnetic coupling, vacuum suction), and AI-based adhesion/shedding prediction models—constitute secondary combinations of this master concept and fall within the scope of this prior art disclosure.
+This design expands upon the public-domain automotive passive safety architecture (Béla Barényi, 1951) by translating structural sacrifice into marine and aeronautical applications. Any extended implementations—including variations in scaffold material (steel, aluminum alloy, FRP composites, high-corrosion-resistant alloys), biological attraction methods for sessile organisms such as barnacles, mussels, and oysters (surface roughness control, micro-current application, biochemical attractant coating), bio-layer thickness ranges, clamping mechanisms (bolting, rolling lock, permanent/electromagnetic coupling, vacuum suction), and AI-based adhesion/shedding prediction models—constitute secondary combinations of this master concept and fall within the scope of this prior art disclosure.
 
 ### 0.3 Zero-Downtime & Non-Welding Principle
 This system strictly avoids modification works that cause electrical or physical damage to the primary hull or marine structures (e.g., high-heat welding, structural perforation). It aims to maintain an organic, zero-downtime survival capacity, ensuring that even if localized sacrificial layers are completely destroyed by extreme ice impacts, the overall protective functionality remains active. The underlying scaffold maintains a segmented, multi-point fastening layout to mitigate single points of failure (SPOF). Even after the sacrificial layer ruptures, the mechanical scaffold maintains its structural integrity to continuously facilitate the re-attachment of subsequent bio-layers.
@@ -33,7 +33,7 @@ This design mechanism is universally applicable to outer protective layers of ma
 Furthermore, when applied to aeronautical and rotating bodies, this mechanism selectively integrates symmetric self-balancing ablation to mitigate rotational imbalance (Dynamic Unbalance) caused by localized shedding, alongside a one-touch clamping slot-based zero-tool quick replacement cartridge structure to preserve operational continuity.
 
 ### 0.7 Purpose of Publication & Environmental Disclaimer
-This document is a Defensive Publication intended to establish public prior art and prevent private patent monopolization. Numerical values, functional descriptions, physical configurations, and projected performance metrics in this specification serve as illustrative examples of the underlying engineering concepts and do not restrict real-world implementations or guarantee absolute performance figures. This system does not automatically replace, modify, or extend statutory classification rules, MARPOL conventions, or IMO anti-fouling regulations, but functions as a supplementary, auxiliary protective armor. The sacrificial layer primarily consists of calcium carbonate ($CaCO_3$) of biological origin, designed to mitigate synthetic microplastic shedding. Upon detachment, natural $CaCO_3$ particles degrade naturally in seawater, supporting environmental compliance with the IMO AFS Convention and the EU Marine Strategy Framework Directive (MSFD).
+This document is a Defensive Publication intended to establish public prior art and prevent private patent monopolization. Numerical values, functional descriptions, physical configurations, and projected performance metrics in this specification serve as illustrative examples of the underlying engineering concepts and do not restrict real-world implementations or guarantee absolute performance figures. This system does not automatically replace, modify, or extend statutory classification rules, MARPOL conventions, or IMO anti-fouling regulations, but functions as a supplementary, auxiliary protective armor. The sacrificial layer primarily consists of calcium carbonate ($CaCO_3$) of biological origin derived from barnacles, mussels, and oysters, designed to mitigate synthetic microplastic shedding. Upon detachment, natural $CaCO_3$ particles degrade naturally in seawater, supporting environmental compliance with the IMO AFS Convention and the EU Marine Strategy Framework Directive (MSFD).
 
 ### 0.8 Independent Prior Invention Acknowledgment & Modesty Notice
 While this system design was independently formulated by the author, the possibility that similar technical motifs were independently conceived by other researchers or industry professionals is recognized. The objective of this publication is not to secure exclusive patent rights, but to formally register these technical details as public Prior Art, thereby mitigating exclusive patent monopolization and fostering open technical collaboration. The Korean original text serves as the authoritative source (Original Authority); in the event of any discrepancies or interpretive variations in foreign translations, the Korean text shall take precedence.
@@ -45,6 +45,7 @@ While this system design was independently formulated by the author, the possibi
 * v1.0 (2026-09-03): Established 3-point anchor architecture integrating deck splash zones, bow ice-belts, and stern propulsion zones. Integrated clamping scaffold framework, bio-sacrificial layer mechanisms, and dynamic control algorithms.
 * v1.1 (2026-09-03): Specified calcium carbonate ($CaCO_3$) composition for IMO AFS / EU MSFD compliance, added non-microplastic declarations, and formalized mathematical equations for impact energy attenuation and bio-regeneration growth rates.
 * v1.2 (2026-09-03): Integrated symmetric self-balancing ablation for aero-rotor rotational balance, added zero-tool quick replacement cartridge mechanisms, generalized mathematical parameter variables, and strictly aligned defensive terminology.
+* v1.3 (2026-09-05): Explicit inclusion of sessile marine organism keywords (barnacles, mussels, oysters), enhanced prior art searchability for patent examiners, and generalized L1 layer definition patch.
 
 ---
 
@@ -58,7 +59,7 @@ While this system design was independently formulated by the author, the possibi
 
 ### [L1] Sacrificial & Regenerative Fabric Layer
 * Scaffold Skeleton — Surface texture scaffold utilizing CWP-based rolling and clamping fastening techniques to evenly distribute loads across the underlying hull or structure.
-* Sacrificial Layer — Sacrificial layer composed of intentionally induced barnacle calcareous accretions or precision ablative cartridges.
+* Sacrificial Layer — Sacrificial layer composed of intentionally induced $CaCO_3$-based calcareous accretions of sessile marine organisms (including barnacles, mussels, and oysters) or precision ablative cartridges.
 * Regeneration & Quick-Swap Algorithm — Detects localized detachment of the sacrificial layer and estimates biological re-attachment rates or zero-tool quick replacement service cycles.
 
 ### [L0] Infrastructure & Fastening Layer
@@ -77,7 +78,7 @@ The adhesion and detachment prediction modules in this system are not restricted
 
 ### B. Scaffold-Flesh Separated Sacrificial Structure & Mathematical Modeling
 * External Inputs — Sea ice impact loads, hydrodynamic friction, chloride ingress, and high-speed aero-particle erosion.
-* Dynamic Mechanism — Upon external impact, the surface bio-layer or ablative cartridge fractures and sheds, converting kinetic energy into thermal and positional energy, while the underlying scaffold remains structurally intact.
+* Dynamic Mechanism — Upon external impact, the surface bio-layer (composed of barnacles, mussels, oysters, or other calcareous accretions) or ablative cartridge fractures and sheds, converting kinetic energy into thermal and positional energy, while the underlying scaffold remains structurally intact.
 * 1. Sacrificial Energy Absorption Model
     * Kinetic Energy of Ice/Particle Impact: $$E_{ice} = \frac{1}{2} m_{ice} v^2$$
     * Energy Dissipated by Sacrificial Layer: $$E_{sac} = \eta \cdot \sigma_c \cdot A \cdot t$$
@@ -146,6 +147,7 @@ The adhesion and detachment prediction modules in this system are not restricted
 * Version 1.0 (2026-09-03): Initial Defensive Publication Release.
 * Version 1.1 (2026-09-03): CaCO3-based biogenic sacrificial layer specification & mathematical formulation.
 * Version 1.2 (2026-09-03): Aero-rotor self-balancing ablation & zero-tool quick replacement integration. Mathematical parameter generalization & strict defensive terminology alignment.
+* Version 1.3 (2026-09-05): Explicit inclusion of mussels, oysters, and sessile marine organism keywords for enhanced prior art searchability & generalized L1 layer definition.
 
 ## Appendix C: AI Assistance Disclosure
 * Draft Generation: Meta AI / Structure Optimization: Google Gemini / Final Audit: Anthropic Claude
@@ -158,8 +160,8 @@ authors:
   - family-names: "deundeuni"
     given-names: "soma-moa"
 title: "MAX-LIFE ICE-BELT: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
-version: "1.2"
-date-released: 2026-09-03
+version: "1.3"
+date-released: 2026-09-05
 url: "[https://github.com/soma-moa/MAX-LIFE-ICE-BELT](https://github.com/soma-moa/MAX-LIFE-ICE-BELT)"
 keywords:
   - "Defensive Publication"
@@ -171,3 +173,5 @@ keywords:
   - "Self-balancing Ablation"
   - "Zero-tool Quick Replacement"
   - "CaCO3 Eco-Armor"
+  - "Mussel Eco-Armor"
+  - "Oyster Eco-Armor"
