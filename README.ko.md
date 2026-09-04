@@ -1,7 +1,7 @@
-# MAX-LIFE ICE-BELT — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적 따개비·홍합·굴 자가재생 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (Ver. 1.4 최종 교정본)
+# MAX-LIFE ICE-BELT — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적·자생적 따개비·홍합·굴 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (Ver. 1.5 최종 교정본)
 
 * 공식 문서 분류: 방어적 선행기술 공개 백서 (Defensive Publication / Prior Art)
-* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.4): 2026-09-05
+* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.5): 2026-09-05
 * 원천 지적재산권(IP) 보유자: 소마모아 (soma-moa / 구상자: deundeuni)
 * 공식 저장소: github.com/soma-moa | 공식 도메인: somamoa.ai.kr
 * 적용 라이선스: CC BY 4.0 & DPL v1.0 (Defensive Patent License)
@@ -13,11 +13,11 @@
 
 ### 0.1 현장에서 출발한 직관적 동기 (Field-Driven Motivation)
 본 구조 설계는 "갑판부 바깥쪽 바닷물 닿는 구간, 쇄빙선의 선수와 선미는 항상 깨지고 닳는데, 매번 페인트칠과 철판 교체로 막을 수 없다"는 현장 문제의식에서 출발하였다.
-기존 해양 방오 기술은 따개비, 홍합, 굴 등 부착 생물을 전면 제거 및 방지의 대상으로만 국한하여 접근하였다. 본 발명은 이러한 관점을 역발상하여, 부착 생물을 충격 시 일차적으로 파쇄되며 에너지 및 마찰력을 흡수하는 "희생층(Sacrificial Layer)"으로 전환 정의한다. 이에 따라 물리적 충격으로 희생층이 깨져 나간 후에도 내부의 기계적 뼈대는 보존되고 표면 생물층이 지속적으로 자가 재생되는 '생존 장갑' 메커니즘을 창안하였다. 기존 CWP 배터리 스왑 모듈에서 검증된 롤링 및 클램핑 탈착 구조를 하부 골격으로 채용함으로써, 모선 및 구조물 표면에 대한 직접 용접 작업 없이 고정력을 확보하는 생존형 방어 구조를 정립한다.
+기존 해양 방오 기술은 따개비, 홍합, 굴 등 부착 생물을 전면 제거 및 방지의 대상으로만 국한하여 접근하였다. 본 발명은 이러한 관점을 역발상하여, 의도적 인공 유도뿐만 아니라 자연적 착생 방치, 생물학적 유도물질 미도포 상태에서의 자생적 부착 및 합성 $CaCO_3$ 모사체를 포괄하여, 부착 생물 및 석회질 형성물을 충격 시 일차적으로 파쇄되며 에너지 및 마찰력을 흡수하는 "희생층(Sacrificial Layer)"으로 전환 정의한다. 이에 따라 물리적 충격으로 희생층이 깨져 나간 후에도 내부의 기계적 뼈대는 보존되고 표면 생물층이 지속적으로 자가 재생되는 '생존 장갑' 메커니즘을 창안하였다. 기존 CWP 배터리 스왑 모듈에서 검증된 롤링 및 클램핑 탈착 구조를 하부 골격으로 채용함으로써, 모선 및 구조물 표면에 대한 직접 용접 작업 없이 고정력을 확보하는 생존형 방어 구조를 정립한다.
 
 ### 0.2 기본 개념 및 재료 융합 확장성 선언 (Master Concept & Material Fusion Standard)
 본 명세서에 개시된 클램핑 스캐폴드 기반의 0점(Zero-Point) 기준 고정 방식 및 희생층 자가재생 메커니즘은 전체 보호 시스템의 최상위 기본 기준점(Master Reference Framework)으로 기능한다.
-본 설계는 공지기술인 자동차 패시브 세이프티(Passive Safety) 철학(Béla Barényi, 1951)의 구조적 희생 개념을 해양 및 항공 환경으로 확장 원용한다. 요철 스캐폴드의 물리적 재질(강재, 알루미늄 합금, FR-복합재, 고내식성 합금 등), 따개비·홍합·굴 등 해양 부착 생물 유도 방식(표면 물리적 조도 제어, 미세 미소전류 인가, 생물학적 유도물질 도포 등), 부착층 두께 범위, 클램핑 메커니즘(볼트 체결, 롤링 락, 영구자석/전자기 결합, 음압 흡착 방식 등) 및 AI 기반 부착·탈락 예측 모델이 단독 또는 복합 추가되는 모든 확장 실현 형태는 본 기본 개념의 부가적 응용 조합이며, 본 선행기술의 포괄적 보호 범주에 포함될 수 있다.
+본 설계는 공지기술인 자동차 패시브 세이프티(Passive Safety) 철학(Béla Barényi, 1951)의 구조적 희생 개념을 해양 및 항공 환경으로 확장 원용한다. 요철 스캐폴드의 물리적 재질(강재, 알루미늄 합금, FR-복합재, 고내식성 합금 등), 따개비·홍합·굴 등 해양 부착 생물 유도 및 착생 방식(표면 물리적 조도 제어, 미세 미소전류 인가, 생물학적 유도물질 도포, 자연적 착생 방치, 합성 $CaCO_3$ 모사체 도포 등), 부착층 두께 범위, 클램핑 메커니즘(볼트 체결, 롤링 락, 영구자석/전자기 결합, 음압 흡착 방식 등) 및 AI 기반 부착·탈락 예측 모델이 단독 또는 복합 추가되는 모든 확장 실현 형태는 본 기본 개념의 부가적 응용 조합이며, 본 선행기술의 포괄적 보호 범주에 포함될 수 있다.
 
 ### 0.3 유기적 무중단 구조 및 무용접 원칙 (Zero-Downtime & Non-Welding)
 본 구조체는 기존 선체 외판 및 해양 구조물 본체에 대한 전기적·물리적 손상(고열 용접, 관통 천공 등)을 수반하는 개조 작업을 엄격히 방지하는 것을 원칙으로 한다. 특정 국소 영역의 희생층이 고출력 유빙 충격 및 마찰로 인해 완파·탈락하더라도 전체 방어 시스템의 연속적 보호 기능이 정지되지 않는 유기체적 무중단 생존력(Zero-Downtime)을 지향한다. 하부 스캐폴드는 분할된 독립 다중 고정 구조를 유지하여 단일 장애점(SPOF, Single Point of Failure) 발생을 완화하며, 외부 희생층이 파열된 후에도 기계적 스캐폴드 골격은 원형을 유지하여 차세대 생물체의 재부착을 지속적으로 유도한다.
@@ -33,9 +33,9 @@
 더불어 본 메커니즘의 항공 및 회전체 적용 시, 국소 탈락에 따른 회전 불균형(Dynamic Unbalance)을 완화하기 위한 대칭 자율 박리(Self-balancing Ablation) 및 원터치 클램핑 슬롯 기반의 무공구 퀵 릴리즈 카트리지(Zero-Tool Quick Replacement Cartridge) 교체 구조를 선택적으로 결합할 수 있다.
 
 ### 0.7 공개 목적 및 환경 안전성 한계 고지
-본 문서는 사적 독점권 설정을 방지하고 기술의 공공성을 확립하기 위한 방어적 선행기술 공개(Defensive Publication) 자료이다. 명세서 내 수치, 기능, 물리적 구성, 예상 성능 서술은 기술 사상을 설명하기 위한 예시적 서술이며 특정 실제 구현 형태를 일률적으로 한정하거나 절대적 성능 수치를 보장하지 않는다. 본 시스템은 기존 법정 선급 검사 기준, 해양환경오염방지협약(MARPOL), 국제해사기구(IMO) 방오 규정을 자동 대체·변경·확장하지 않으며 보조적·참고적 보호 구조체로서만 활용된다. 본 희생층은 따개비, 홍합, 굴 기원의 탄산칼슘($CaCO_3$) 기반 생물 무기질을 주요 성분으로 포함하여, 합성수지계 미세플라스틱(Microplastic) 유출을 완화하도록 설계된다. 탈락 시 해양에서 자연 분해되는 천연 탄산칼슘 입자로서 IMO AFS 협약 및 EU 해양전략 프레임워크(MSFD) 규제 대응을 보조하는 환경 친화적 특성을 지향한다.
+본 문서는 사적 독점권 설정을 방지하고 기술의 공공성을 확립하기 위한 방어적 선행기술 공개(Defensive Publication) 자료이다. 명세서 내 수치, 기능, 물리적 구성, 예상 성능 서술은 기술 사상을 설명하기 위한 예시적 서술이며 특정 실제 구현 형태를 일률적으로 한정하거나 절대적 성능 수치를 보장하지 않는다. 본 시스템은 기존 법정 선급 검사 기준, 해양환경오염방지협약(MARPOL), 국제해사기구(IMO) 방오 규정을 자동 대체·변경·확장하지 않으며 보조적·참고적 보호 구조체로서만 활용된다. 본 희생층은 따개비, 홍합, 굴 기원의 생물 무기질 및 합성 $CaCO_3$ 모사체를 포함하는 탄산칼슘 성분을 주요 성분으로 포함하여, 합성수지계 미세플라스틱(Microplastic) 유출을 완화하도록 설계된다. 탈락 시 해양에서 자연 분해되는 천연 탄산칼슘 입자로서 IMO AFS 협약 및 EU 해양전략 프레임워크(MSFD) 규제 대응을 보조하는 환경 친화적 특성을 지향한다.
 
-### 0.8 독립적 선행 구상 인정 및 겸양 고지 (v1.4 삼중 방어 조항)
+### 0.8 독립적 선행 구상 인정 및 겸양 고지 (v1.4 삼중 방어 조항 유지)
 본 시스템 설계는 창안자가 현장 문제의식에서 출발하여 기존 공개된 원리 및 공지기술($CaCO_3$ 생물광물화, 희생 양극, 자동차 크럼플존 등)이 이미 존재하는지 여부를 확인·검토한 후, 창안자 개인의 관점에서 "나는 이렇게 생각했다"는 방식으로 조합·재구성한 것이다.
 "본인이 혼자 최초로 독자 구상했다"고 주장하지 않으며, 동일하거나 유사한 기술적 모티프가 타 연구자 또는 산업 현장에서 독립적으로 구상되었을 가능성을 충분히 인정한다.
 본 공개의 목적은 특정 주체의 배타적 특허 독점권 확보가 아니며, 기술 내역을 공공의 선행기술(Prior Art)로 등록하여 타 주체의 사적 독점 출원 시 신규성·진보성 부정의 거절 근거를 제공하는 데 있다. 한국어 원문이 기준 원본(Original Authority)이며, 타 언어 번역본에서 의미상 충돌이나 해석 차이 발생 시 한국어 원문의 서술과 정의를 최우선 기준으로 적용한다.
@@ -49,6 +49,7 @@
 * v1.2 (2026-09-03): 항공/헬기 로터 블레이드 확장에 따른 회전 불균형 완화 대칭 자율 박리(Self-balancing Ablation) 명세 및 무공구 퀵 릴리즈 교체(Zero-Tool Quick Replacement) 메커니즘 통합. 추상화된 가변 파라미터 수식 정비 및 방어적 표현 엄격화.
 * v1.3 (2026-09-05): 석회질 부착 생물군(따개비, 홍합, 굴 등) 키워드 명시적 확장, 특허 심사관 검색 대응성 강화 및 L1 희생층 정의 상위 포괄화 패치.
 * v1.4 (2026-09-05): 0.8절 창안자 삼중 방어 조항(선행기술 조사 확인, 최초/독점 미주장, 주관적 관점의 조합·재구성 명시) 정교화 패치.
+* v1.5 (2026-09-05): 희생층 형성 메커니즘의 최상위 상위개념 포괄화 패치 (의도적 유도, 자연적 착생 방치, 자생적 부착 유지 및 합성 CaCO3 모사체 활용 행위 일체 포함).
 
 ---
 
@@ -62,7 +63,7 @@
 
 ### [L1] 희생·재생 패브릭 레이어 (Sacrificial & Regenerative Fabric Layer)
 * 하부 뼈대 구조 — CWP 기반의 롤링 및 클램핑 고정 기법이 적용된 표면 요철 스캐폴드(Scaffold) 구조체로서, 모선 및 표면에 하중을 균일하게 분산시킨다.
-* 표면 살 구조 — 스캐폴드 표면에 의도적으로 유도·형성된 따개비, 홍합, 굴을 포함하는 $CaCO_3$계 석회질 부착 생물 집합체 또는 정밀 어블레이티브 카트리지 희생층이다.
+* 표면 살 구조 — 의도적 유도, 자연적 착생 방치, 생물학적 유도물질 미도포 상태에서의 자생적 부착 유지, 합성 $CaCO_3$ 모사체를 포함하는 모든 형태의 $CaCO_3$계 석회질 형성물(따개비, 홍합, 굴 등) 또는 정밀 어블레이티브 카트리지 희생층이다.
 * 자가재생 및 퀵 교체 알고리즘 — 충격으로 인한 희생층 국소 탈락 발생 시, 생물학적 자가 재부착을 유도하거나 무공구 퀵 릴리즈 교체 수명 주기를 추정한다.
 
 ### [L0] 인프라 및 고정 레이어 (Infrastructure & Fastening Layer)
@@ -81,7 +82,7 @@
 
 ### B. 뼈대-살 분리형 희생 구조부 및 공학 수식 모델링
 * 외부 입력 조건 — 유빙 물리 충격, 해수 마찰, 비산염분, 항공 고속 입자 마찰 하중이 동시에 작동한다.
-* 동적 처리 메커니즘 — 외부 충격 발생 시 표면 따개비, 홍합, 굴 등 석회질 희생층 및 어블레이티브 카트리지가 자체 파쇄·탈락하면서 운동 에너지를 열 및 위치 에너지로 전환하여 소멸시킨다. 하부 스캐폴드는 변형 없이 잔존한다.
+* 동적 처리 메커니즘 — 외부 충격 발생 시 표면 따개비, 홍합, 굴, 자생적 부착 생물층, 합성 $CaCO_3$ 모사체 등 석회질 희생층 및 어블레이티브 카트리지가 자체 파쇄·탈락하면서 운동 에너지를 열 및 위치 에너지로 전환하여 소멸시킨다. 하부 스캐폴드는 변형 없이 잔존한다.
 * 1. 충격 에너지 감쇄 모델 (Sacrificial Energy Absorption)
     * 유빙 및 입자 충돌 운동에너지 공식: $$E_{ice} = \frac{1}{2} m_{ice} v^2$$
     * 희생층 파쇄 흡수 에너지 공식: $$E_{sac} = \eta \cdot \sigma_c \cdot A \cdot t$$
@@ -151,7 +152,8 @@
 * Version 1.1 (2026-09-03): CaCO3-based biogenic sacrificial layer specification & mathematical formulation.
 * Version 1.2 (2026-09-03): Aero-rotor self-balancing ablation & zero-tool quick replacement integration. Mathematical parameter generalization & strict defensive terminology alignment.
 * Version 1.3 (2026-09-05): Explicit inclusion of mussels, oysters, and sessile marine organism keywords for enhanced prior art searchability & generalized L1 layer definition.
-* Version 1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause (prior art check confirmation, non-monopoly/non-exclusive claim, and personal perspective combination declaration).
+* Version 1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause.
+* Version 1.5 (2026-09-05): Expanded prior art scope covering intentional, spontaneous/natural untended bio-adhesion, and synthetic CaCO3 mimetics.
 
 ## Appendix C: AI Assistance Disclosure
 * Draft Generation: Meta AI / Structure Optimization: Google Gemini / Final Audit: Anthropic Claude
@@ -164,7 +166,7 @@ authors:
   - family-names: "deundeuni"
     given-names: "soma-moa"
 title: "MAX-LIFE ICE-BELT: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
-version: "1.4"
+version: "1.5"
 date-released: 2026-09-05
 url: "[https://github.com/soma-moa/MAX-LIFE-ICE-BELT](https://github.com/soma-moa/MAX-LIFE-ICE-BELT)"
 keywords:
@@ -179,3 +181,4 @@ keywords:
   - "CaCO3 Eco-Armor"
   - "Mussel Eco-Armor"
   - "Oyster Eco-Armor"
+  - "Spontaneous Bio-Adhesion"
