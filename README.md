@@ -1,7 +1,7 @@
-# MAX-LIFE ICE-BELT — Clamping Scaffold, Intentional Sacrificial Bio-Armor (Barnacles, Mussels, Oysters), and Aero-Rotor Ablative System Technical Specification for Splash Belts, Bow, and Stern of Icebreakers and Marine Contact Structures (Ver. 1.3 Final Revision)
+# MAX-LIFE ICE-BELT — Clamping Scaffold, Intentional Sacrificial Bio-Armor (Barnacles, Mussels, Oysters), and Aero-Rotor Ablative System Technical Specification for Splash Belts, Bow, and Stern of Icebreakers and Marine Contact Structures (Ver. 1.4 Final Revision)
 
 * Official Classification: Defensive Publication / Prior Art White Paper
-* Initial Concept Date: 2026-09-02 / Final Revision Date (v1.3): 2026-09-05
+* Initial Concept Date: 2026-09-02 / Final Revision Date (v1.4): 2026-09-05
 * Primary IP Holder: soma-moa (Architect: deundeuni)
 * Official Repository: github.com/soma-moa | Official Domain: somamoa.ai.kr
 * Applicable Licenses: CC BY 4.0 & DPL v1.0 (Defensive Patent License)
@@ -35,8 +35,10 @@ Furthermore, when applied to aeronautical and rotating bodies, this mechanism se
 ### 0.7 Purpose of Publication & Environmental Disclaimer
 This document is a Defensive Publication intended to establish public prior art and prevent private patent monopolization. Numerical values, functional descriptions, physical configurations, and projected performance metrics in this specification serve as illustrative examples of the underlying engineering concepts and do not restrict real-world implementations or guarantee absolute performance figures. This system does not automatically replace, modify, or extend statutory classification rules, MARPOL conventions, or IMO anti-fouling regulations, but functions as a supplementary, auxiliary protective armor. The sacrificial layer primarily consists of calcium carbonate ($CaCO_3$) of biological origin derived from barnacles, mussels, and oysters, designed to mitigate synthetic microplastic shedding. Upon detachment, natural $CaCO_3$ particles degrade naturally in seawater, supporting environmental compliance with the IMO AFS Convention and the EU Marine Strategy Framework Directive (MSFD).
 
-### 0.8 Independent Prior Invention Acknowledgment & Modesty Notice
-While this system design was independently formulated by the author, the possibility that similar technical motifs were independently conceived by other researchers or industry professionals is recognized. The objective of this publication is not to secure exclusive patent rights, but to formally register these technical details as public Prior Art, thereby mitigating exclusive patent monopolization and fostering open technical collaboration. The Korean original text serves as the authoritative source (Original Authority); in the event of any discrepancies or interpretive variations in foreign translations, the Korean text shall take precedence.
+### 0.8 Independent Prior Invention Acknowledgment & Modesty Notice (v1.4 Triple Defense Clause)
+This system design originated from the author's field-driven observations and was formulated after checking and reviewing existing public principles and prior art (such as $CaCO_3$ biomineralization, sacrificial anodes, and automotive crumple zones). The author combined and reconstructed these concepts from a personal perspective ("this is how I conceptualized it").
+The author does not claim to be the sole or first original inventor, and fully acknowledges the possibility that identical or similar technical motifs were independently conceived by other researchers or industry professionals.
+The primary objective of this publication is not to secure exclusive patent rights for a specific entity, but to register these technical details as public Prior Art, thereby providing legal grounds to refute novelty and non-obviousness in the event of private monopolistic patent filings by third parties. The Korean original text serves as the authoritative source (Original Authority); in the event of any discrepancies or interpretive variations in foreign translations, the Korean text shall take precedence.
 
 ---
 
@@ -46,6 +48,7 @@ While this system design was independently formulated by the author, the possibi
 * v1.1 (2026-09-03): Specified calcium carbonate ($CaCO_3$) composition for IMO AFS / EU MSFD compliance, added non-microplastic declarations, and formalized mathematical equations for impact energy attenuation and bio-regeneration growth rates.
 * v1.2 (2026-09-03): Integrated symmetric self-balancing ablation for aero-rotor rotational balance, added zero-tool quick replacement cartridge mechanisms, generalized mathematical parameter variables, and strictly aligned defensive terminology.
 * v1.3 (2026-09-05): Explicit inclusion of sessile marine organism keywords (barnacles, mussels, oysters), enhanced prior art searchability for patent examiners, and generalized L1 layer definition patch.
+* v1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause (prior art check confirmation, non-monopoly/non-exclusive claim, and personal perspective combination declaration).
 
 ---
 
@@ -148,6 +151,7 @@ The adhesion and detachment prediction modules in this system are not restricted
 * Version 1.1 (2026-09-03): CaCO3-based biogenic sacrificial layer specification & mathematical formulation.
 * Version 1.2 (2026-09-03): Aero-rotor self-balancing ablation & zero-tool quick replacement integration. Mathematical parameter generalization & strict defensive terminology alignment.
 * Version 1.3 (2026-09-05): Explicit inclusion of mussels, oysters, and sessile marine organism keywords for enhanced prior art searchability & generalized L1 layer definition.
+* Version 1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause (prior art check confirmation, non-monopoly/non-exclusive claim, and personal perspective combination declaration).
 
 ## Appendix C: AI Assistance Disclosure
 * Draft Generation: Meta AI / Structure Optimization: Google Gemini / Final Audit: Anthropic Claude
@@ -160,7 +164,7 @@ authors:
   - family-names: "deundeuni"
     given-names: "soma-moa"
 title: "MAX-LIFE ICE-BELT: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
-version: "1.3"
+version: "1.4"
 date-released: 2026-09-05
 url: "[https://github.com/soma-moa/MAX-LIFE-ICE-BELT](https://github.com/soma-moa/MAX-LIFE-ICE-BELT)"
 keywords:
