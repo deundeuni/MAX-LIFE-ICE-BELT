@@ -1,7 +1,7 @@
-# MAX-LIFE ICE-BELT — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적·자생적 따개비·홍합·굴 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (Ver. 1.5 최종 교정본)
+# MAX-LIFE ICE-BELT — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적·자생적 따개비·홍합·굴 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (Ver. 1.6 최종 교정본)
 
 * 공식 문서 분류: 방어적 선행기술 공개 백서 (Defensive Publication / Prior Art)
-* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.5): 2026-09-05
+* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.6): 2026-09-06
 * 원천 지적재산권(IP) 보유자: 소마모아 (soma-moa / 구상자: deundeuni)
 * 공식 저장소: github.com/soma-moa | 공식 도메인: somamoa.ai.kr
 * 적용 라이선스: CC BY 4.0 & DPL v1.0 (Defensive Patent License)
@@ -18,6 +18,8 @@
 ### 0.2 기본 개념 및 재료 융합 확장성 선언 (Master Concept & Material Fusion Standard)
 본 명세서에 개시된 클램핑 스캐폴드 기반의 0점(Zero-Point) 기준 고정 방식 및 희생층 자가재생 메커니즘은 전체 보호 시스템의 최상위 기본 기준점(Master Reference Framework)으로 기능한다.
 본 설계는 공지기술인 자동차 패시브 세이프티(Passive Safety) 철학(Béla Barényi, 1951)의 구조적 희생 개념을 해양 및 항공 환경으로 확장 원용한다. 요철 스캐폴드의 물리적 재질(강재, 알루미늄 합금, FR-복합재, 고내식성 합금 등), 따개비·홍합·굴 등 해양 부착 생물 유도 및 착생 방식(표면 물리적 조도 제어, 미세 미소전류 인가, 생물학적 유도물질 도포, 자연적 착생 방치, 합성 $CaCO_3$ 모사체 도포 등), 부착층 두께 범위, 클램핑 메커니즘(볼트 체결, 롤링 락, 영구자석/전자기 결합, 음압 흡착 방식 등) 및 AI 기반 부착·탈락 예측 모델이 단독 또는 복합 추가되는 모든 확장 실현 형태는 본 기본 개념의 부가적 응용 조합이며, 본 선행기술의 포괄적 보호 범주에 포함될 수 있다.
+
+* **상위 아키텍처 및 APU 제어기 연계 명시:** 본 ICE-BELT의 스캐폴드 0점 고정 및 100ms 국소 격리 제어는 `ARCHITECTURE_STRATEGY v3.2.4`의 범용 생존 아키텍처 및 `chiplet-apu-multi-system-survival-architecture v2.6`의 Tri-State Isolation, T-Reg 억제 논리를 해양 물리 환경에 구현한 하위 구현체이다.
 
 ### 0.3 유기적 무중단 구조 및 무용접 원칙 (Zero-Downtime & Non-Welding)
 본 구조체는 기존 선체 외판 및 해양 구조물 본체에 대한 전기적·물리적 손상(고열 용접, 관통 천공 등)을 수반하는 개조 작업을 엄격히 방지하는 것을 원칙으로 한다. 특정 국소 영역의 희생층이 고출력 유빙 충격 및 마찰로 인해 완파·탈락하더라도 전체 방어 시스템의 연속적 보호 기능이 정지되지 않는 유기체적 무중단 생존력(Zero-Downtime)을 지향한다. 하부 스캐폴드는 분할된 독립 다중 고정 구조를 유지하여 단일 장애점(SPOF, Single Point of Failure) 발생을 완화하며, 외부 희생층이 파열된 후에도 기계적 스캐폴드 골격은 원형을 유지하여 차세대 생물체의 재부착을 지속적으로 유도한다.
@@ -50,13 +52,14 @@
 * v1.3 (2026-09-05): 석회질 부착 생물군(따개비, 홍합, 굴 등) 키워드 명시적 확장, 특허 심사관 검색 대응성 강화 및 L1 희생층 정의 상위 포괄화 패치.
 * v1.4 (2026-09-05): 0.8절 창안자 삼중 방어 조항(선행기술 조사 확인, 최초/독점 미주장, 주관적 관점의 조합·재구성 명시) 정교화 패치.
 * v1.5 (2026-09-05): 희생층 형성 메커니즘의 최상위 상위개념 포괄화 패치 (의도적 유도, 자연적 착생 방치, 자생적 부착 유지 및 합성 CaCO3 모사체 활용 행위 일체 포함).
+* v1.6 (2026-09-06): 상위 생존 아키텍처(ARCHITECTURE_STRATEGY v3.2.4), APU 제어기(chiplet-apu-multi-system-survival-architecture v2.6) 및 CWP 4대 하드웨어 메커니즘 상호 참조 연계 패치.
 
 ---
 
 ## 2. 풀스택 응용 구조 설계 (3-Tier Architecture)
 
 ### [L2] 보호 인터페이스 레이어 (Protective Interface Layer)
-* 갑판 스플래시 구간 (Zone A) — 고속 항해 및 파도 파쇄 시 발생하는 해수 비산(Splash), 비산염분, 상부 유빙 조각의 충격을 일차적으로 완화하며 염분 침투를 차단한다.
+* 갑판 스플래시 구간 (Zone A) — 고속 항해 및 파도 파쇄 시 발생하는 해수 비산(Splash), 비산염분, 상부 유빙 조각의 충격을 일차적으로 완화하며 염분 침투를 억제한다.
 * 선수 구간 (Zone B) — 전진 항해 시 극지 유빙과의 직접적 고출력 충돌 에너지 및 수평 마찰력을 분산·흡수한다.
 * 선미 구간 (Zone C) — 후진 쇄빙 작업 및 프로펠러 회전에 의한 유빙 역류 충격, 와류 마찰로부터 추진 유닛 하우징 및 러더 주변 외판을 보호한다.
 * 회전체 구간 (Zone Aero) — 헬기 로터 및 항공기 흡기 전면부의 입자 충돌 하중을 어블레이티브 방식으로 흡수하며 대칭 자율 박리를 통해 회전 편심 하중을 완화한다.
@@ -107,7 +110,7 @@
 ## 4. 동적 자원 관리 및 방어적 안전 제어
 
 * Rate Limiter (충격 빈도 정속화 제어) — 연속 충돌 발생 시 고정부에 가해지는 과도한 피로 하중 스파이크를 완화하여 전달 하중을 안정화한다.
-* Tri-State Isolation (3상 제어 격리) — 센서 또는 고정부 이상 검출 시 0.1초(100ms) 이내에 고임피던스(High-Impedance) 상태로 전환하여 메인 제어계로의 오류 전파를 차단한다.
+* Tri-State Isolation (3상 제어 격리) — 센서 또는 고정부 이상 검출 시 0.1초(100ms) 이내에 고임피던스(High-Impedance) 상태로 전환하여 메인 제어계로의 오류 전파를 억제한다.
 
 ---
 
@@ -124,7 +127,7 @@
 
 ---
 
-## 7. 원작자 실리 보호 및 방어막 선언
+## 7. 실리보호 (Practical Protection)
 
 * 4층 방어 체계 (Quadruple Defense Architecture)
     * 타임스탬프 체계 — 타임스탬프 기반 선행 구상 시점 증명.
@@ -134,13 +137,21 @@
 
 ---
 
-## 8. 출처 및 문서 완전성 선언
+## 8. 출처 및 문서 완전성 선언 (Sources)
 
-* [국제 표준 및 규격] ISO 8501, IMO AFS Convention, EU MSFD, 각국 선급(KR, DNV, ABS) Ice Class Rules.
-* [공지기술 원용] Béla Barényi (1951), Automotive Passive Safety Architecture (Crumple Zone & Airbag).
-* [법적 판례] 대한민국 특허법 제103조, 미국 특허법 35 U.S.C. §273.
-* 문서 완결성 — 본 문서는 단위 명세서로서 독자적인 기술적 완결성을 가진다.
-* 원안 우선 조항 — 한국어 원문이 기준 원본(Original Authority)이며, 타 언어 번역본에서 해석 충돌 발생 시 한국어 원문을 최우선으로 적용한다.
+* **연계 생존 아키텍처:** GitHub - `soma-moa / ARCHITECTURE_STRATEGY.md v3.2.4`
+* **연계 APU 제어기:** GitHub - `deundeuni / chiplet-apu-multi-system-survival-architecture v2.6`
+* **연계 CWP 4대 하드웨어 저장소:**
+  * GitHub - `deundeuni / CWP-Entry`
+  * GitHub - `deundeuni / CWP-Rolling-Self-Align-Battery-Swap-System`
+  * GitHub - `deundeuni / CWP-Battery-Swap`
+  * GitHub - `deundeuni / CWP-Clamping-Battery-Swap-System`
+* **최상위 관문:** `somamoa.ai.kr` (Canonical Gateway)
+* **국제 표준 및 규격:** ISO 8501, IMO AFS Convention, EU MSFD, 각국 선급(KR, DNV, ABS) Ice Class Rules.
+* **공지기술 원용:** Béla Barényi (1951), Automotive Passive Safety Architecture (Crumple Zone & Airbag).
+* **법적 판례:** 대한민국 특허법 제103조, 미국 특허법 35 U.S.C. §273.
+* **문서 완결성:** 본 문서는 단위 명세서로서 독자적인 기술적 완결성을 가진다.
+* **원안 우선 조항:** 한국어 원문이 기준 원본(Original Authority)이며, 타 언어 번역본에서 해석 충돌 발생 시 한국어 원문의 서술과 정의를 최우선으로 적용한다.
 
 ---
 
@@ -154,6 +165,7 @@
 * Version 1.3 (2026-09-05): Explicit inclusion of mussels, oysters, and sessile marine organism keywords for enhanced prior art searchability & generalized L1 layer definition.
 * Version 1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause.
 * Version 1.5 (2026-09-05): Expanded prior art scope covering intentional, spontaneous/natural untended bio-adhesion, and synthetic CaCO3 mimetics.
+* Version 1.6 (2026-09-06): Integrated cross-references to upper survival architecture (ARCHITECTURE_STRATEGY v3.2.4), APU controller (chiplet-apu-multi-system-survival-architecture v2.6), and CWP 4-Hardware mechanisms.
 
 ## Appendix C: AI Assistance Disclosure
 * Draft Generation: Meta AI / Structure Optimization: Google Gemini / Final Audit: Anthropic Claude
@@ -166,8 +178,8 @@ authors:
   - family-names: "deundeuni"
     given-names: "soma-moa"
 title: "MAX-LIFE ICE-BELT: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
-version: "1.5"
-date-released: 2026-09-05
+version: "1.6"
+date-released: 2026-09-06
 url: "[https://github.com/soma-moa/MAX-LIFE-ICE-BELT](https://github.com/soma-moa/MAX-LIFE-ICE-BELT)"
 keywords:
   - "Defensive Publication"
