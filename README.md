@@ -1,160 +1,164 @@
-> **Bilingual Disclosure Notice:** This is a bilingual disclosure - same content in KR/EN, v1.6 2026-09-06 (Korean version: [README.ko.md](README.ko.md))  
-> **Original Authority Notice:** This English version was drafted and translated with the assistance of AI tools (Meta AI, Google Gemini), so phrasing and expressions may not be perfectly smooth or fully precise. The authoritative original for all legal, technical, and engineering interpretations belongs exclusively to the Korean document (`README.ko.md`). (PHILOSOPHY.ko.md is authoritative original)
+# Max-Life-Ice-Belt — Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors Technical Specification (v1.8 Prior-Art Refined Baseline)
 
-# MAX-LIFE ICE-BELT — Clamping Scaffold, Sacrificial Bio-Armor (Barnacles, Mussels, Oysters, Spontaneous Growth, Synthetic CaCO3 Mimetics), and Aero-Rotor Ablative System Technical Specification for Splash Belts, Bow, and Stern of Icebreakers and Marine Contact Structures (Ver. 1.6 Final Revision)
-
-* **Official Classification:** Defensive Publication / Prior Art White Paper
-* **Initial Concept Date:** 2026-09-02 / **Final Revision Date (v1.6):** 2026-09-06
-* **Primary IP Holder:** soma-moa (Architect: deundeuni)
-* **Official Repository:** github.com/soma-moa | **Official Domain:** somamoa.ai.kr
-* **Applicable Licenses:** CC BY 4.0 & DPL v1.0 (Defensive Patent License)
-* **Original Language Notice:** The Korean original text serves as the official authoritative source, and this English translation is provided for reference purposes only. In the event of any interpretive conflict, the Korean text shall prevail.
+* Official Document Classification: Defensive Publication / Prior Art
+* Initial Conception Date: 2026-09-02 / Final Revision Date (v1.8): 2026-09-28
+* Original IP Holder: soma-moa (Founder / Architect: deundeuni)
+* Official Repository: github.com/soma-moa/Max-Life-Ice-Belt | Official Domain: somamoa.ai.kr
+* Applicable License: Dual-licensed under Creative Commons Attribution 4.0 International (CC BY 4.0) & Apache License 2.0 (Apache-2.0) (Replacing legacy DPL v1.0 as of September 27, 2026)
+* Original Language Clause: The Korean original text of this whitepaper serves as the primary governing standard, and translations into other languages are provided for reference purposes only. In case of any conflict of interpretation, the Korean original text shall prevail.
 
 ---
 
-## 0. Founder Statement & Motivation
+## 0. Founder's Statement & Motivation
 
 ### 0.1 Field-Driven Motivation
-This structural design originates from a field-driven observation: "Outer deck splash zones and the bow and stern of icebreakers are constantly eroded and damaged; painting and steel plate replacement cannot endlessly address this issue."
-Conventional marine anti-fouling technologies treat adhering organisms—such as barnacles, mussels, and oysters—purely as targets for removal and prevention. This invention reverses that perspective, redefining adhering organisms and calcareous accretions—encompassing artificial induction, natural untended settlement, spontaneous bio-adhesion without biochemical attractants, and synthetic $CaCO_3$ mimetics—as a "Sacrificial Layer" that intentionally fractures upon impact to absorb mechanical energy and friction forces. Consequently, a 'survival armor' mechanism was formulated where the internal mechanical skeleton remains intact even after the sacrificial layer fractures, allowing the surface biological layer to continuously self-regenerate. By adopting the non-welding rolling and clamping attachment structure validated in the CWP battery swap system as the underlying scaffold, a survival-focused protective structure is established without requiring direct welding on the vessel's primary hull or structure surfaces.
+This structural design originated from a practical field observation: "The outer deck sections exposed to seawater, as well as the bow and stern of icebreakers, are subject to continuous crushing and wear that cannot be sustainably mitigated by repeated repainting and steel plate replacements."
+Conventional marine anti-fouling technologies treat bio-attaching organisms such as barnacles, mussels, and oysters exclusively as targets for complete removal and prevention. Reversing this paradigm, this invention redefines bio-attached organisms, calcified formations, naturally occurring untended bio-adhesion, and synthetic $CaCO_3$ mimetics as a "sacrificial layer" that crushes during impact to absorb energy and frictional forces. Consequently, even when the sacrificial layer is shattered by physical impact, the internal mechanical skeleton remains intact, enabling a "survival armor" mechanism where the surface biological layer continuously self-regenerates. By adopting the rolling and clamping detachable mechanisms validated in the CWP battery swap module as the underlying skeleton, a resilient protective structure is established without requiring direct welding onto the vessel's hull or structural surfaces.
 
 ### 0.2 Master Concept & Material Fusion Standard
-The zero-point clamping scaffold fastening method and the sacrificial bio-regeneration mechanism disclosed in this specification function as the Master Reference Framework for the entire protection system.
-This design expands upon the public-domain automotive passive safety architecture (Béla Barényi, 1951) by translating structural sacrifice into marine and aeronautical applications. Any extended implementations—including variations in scaffold material (steel, aluminum alloy, FRP composites, high-corrosion-resistant alloys), biological attraction and settlement methods for sessile organisms such as barnacles, mussels, and oysters (surface roughness control, micro-current application, biochemical attractant coating, natural untended bio-settlement, synthetic $CaCO_3$ mimetic application), bio-layer thickness ranges, clamping mechanisms (bolting, rolling lock, permanent/electromagnetic coupling, vacuum suction), and AI-based adhesion/shedding prediction models—constitute secondary combinations of this master concept and fall within the scope of this prior art disclosure.
+The zero-point reference fastening method and sacrificial layer self-regeneration mechanism based on the clamping scaffold disclosed herein function as the master reference framework for the entire protective system.
+This design extends the structural sacrifice philosophy of passive safety architecture in automotive engineering (Béla Barényi, 1951) into marine and aerospace environments. All extended implementations—including variations in physical materials for the corrugated scaffold (steel, aluminum alloy, fiber-reinforced composites, high-corrosion-resistant alloys), methods of bio-attraction and adhesion (surface micro-roughness control, micro-current application, biological attraction coating, natural untended settlement, synthetic $CaCO_3$ mimetic application), attachment layer thickness ranges, clamping mechanisms (bolting, rolling lock, permanent/electromagnetic coupling, vacuum suction), and AI-driven adhesion/spallation prediction models—represent auxiliary application combinations of this core framework and fall within the protective scope of this prior art.
 
-* **Upper Architecture & APU Controller Integration:** The zero-point clamping scaffold retention and 100ms localized isolation control of this ICE-BELT represent a sub-implementation of the universal survival architecture in `ARCHITECTURE_STRATEGY v3.2.4` and the Tri-State Isolation and T-Reg suppression logic in `chiplet-apu-multi-system-survival-architecture v2.6`, applied to marine physical environments.
+* **Upper Architecture and APU Controller Interlock:** The zero-point scaffold fastening and 100ms localized isolation control of Max-Life-Ice-Belt represent a domain-specific implementation of the universal survival architecture (`ARCHITECTURE_STRATEGY v3.2.4`) and the Tri-State Isolation and T-Reg suppression logic from `chiplet-apu-multi-system-survival-architecture v2.6`.
 
 ### 0.3 Zero-Downtime & Non-Welding Principle
-This system strictly avoids modification works that cause electrical or physical damage to the primary hull or marine structures (e.g., high-heat welding, structural perforation). It aims to maintain an organic, zero-downtime survival capacity, ensuring that even if localized sacrificial layers are completely destroyed by extreme ice impacts, the overall protective functionality remains active. The underlying scaffold maintains a segmented, multi-point fastening layout to mitigate single points of failure (SPOF). Even after the sacrificial layer ruptures, the mechanical scaffold maintains its structural integrity to continuously facilitate the re-attachment of subsequent bio-layers.
+This structural body strictly avoids modification procedures that cause electrical or physical damage to the existing hull plating and marine structures (such as high-heat welding or invasive drilling). Even if localized regions of the sacrificial layer suffer total destruction or spallation under high-energy sea ice impacts and friction, the system is designed to maintain zero-downtime operational continuity. The lower scaffold maintains segmented, independent multi-point fastening structures to mitigate single points of failure (SPOF). Following sacrificial layer rupture, the mechanical scaffold frame remains intact to continuously induce subsequent bio-reattachment.
 
-### 0.4 Universal Open Standard
-This technical specification is not exclusively bound to any single shipyard, classification society, specialty coating manufacturer, or specific hull geometry. It operates as a Universal Open Standard that incorporates public surface treatment and corrosion management standards (such as ISO 8501), classification society ice-belt structural rules, and public bio-adhesion research guidelines as auxiliary reference baselines.
+### 0.4 Universal Open Standard & Non-Exclusive Interoperability
+This technical specification is not exclusively bound to specific shipyards, classification societies, specialized coating manufacturers, or marine vessel geometries. It operates as a universal open standard referencing public surface treatment and corrosion management standards (such as ISO 8501), classification society ice-belt structural rules, and public marine bio-attachment research protocols as auxiliary benchmarks.
 
 ### 0.5 Field-Based Priority Control Principle
-Under extreme environmental overloads exceeding design thresholds, the system prioritizes maintaining the physical retention of the scaffold skeleton and its tight adhesion to the hull. Secondary protection goals, such as preserving the complete surface geometry of the sacrificial layer, are incrementally surrendered to prevent direct impact transmission to the primary hull plates and preserve control continuity. This system does not guarantee absolute, permanent invulnerability; rather, it realistically aims to extend maintenance and replacement intervals as far as physically feasible.
+When extreme environmental impact overloads exceed system thresholds, the system prioritizes maintaining the physical integrity and hull-adhesion of the underlying scaffold skeleton above all else. Secondary protection objectives, such as maintaining perfect sacrificial layer surface geometry, are progressively surrendered to prevent direct impact transmission to the primary hull plating and maintain control continuity. The system does not guarantee absolute, permanent invulnerability; rather, its practical objective is to physically extend maintenance and replacement cycles to the maximum extent feasible.
 
-### 0.6 Universal Application Scope & Aero-Rotor Expansion
-This design mechanism is universally applicable to outer protective layers of marine structures subject to dynamic seawater contact, sea ice collision, and salt spray, including polar icebreakers, commercial vessel collision zones, bulwark splash belts, breakwaters, offshore wind turbine foundations (including boat landings), floating offshore units (FLNG/FPSO), and CWP mooring bodies.
-Furthermore, when applied to aeronautical and rotating bodies, this mechanism selectively integrates symmetric self-balancing ablation to mitigate rotational imbalance (Dynamic Unbalance) caused by localized shedding, alongside a one-touch clamping slot-based zero-tool quick replacement cartridge structure to preserve operational continuity.
+### 0.6 Universal Application Scope & Aero-Rotor Extension
+This design mechanism is universally applicable to external protective shells across all marine structures subject to dynamic seawater contact, sea-ice impacts, and high-salinity spray—including polar icebreakers, commercial vessel collision zones, bulwark splash belts, breakwater frontlines, offshore wind turbine foundations (including landing platforms), floating offshore plants (FLNG/FPSO), and CWP mooring units.
+Furthermore, when applied to aircraft and helicopter rotary systems, self-balancing ablation mechanisms and zero-tool quick replacement cartridges based on one-touch clamping slots can be selectively integrated to mitigate dynamic unbalance caused by localized spallation.
 
-### 0.7 Purpose of Publication & Environmental Disclaimer
-This document is a Defensive Publication intended to establish public prior art and prevent private patent monopolization. Numerical values, functional descriptions, physical configurations, and projected performance metrics in this specification serve as illustrative examples of the underlying engineering concepts and do not restrict real-world implementations or guarantee absolute performance figures. This system does not automatically replace, modify, or extend statutory classification rules, MARPOL conventions, or IMO anti-fouling regulations, but functions as a supplementary, auxiliary protective armor. The sacrificial layer primarily consists of calcium carbonate ($CaCO_3$) of biological origin (derived from barnacles, mussels, and oysters), spontaneous growth, or synthetic $CaCO_3$ mimetics, designed to mitigate synthetic microplastic shedding. Upon detachment, natural $CaCO_3$ particles degrade naturally in seawater, supporting environmental compliance with the IMO AFS Convention and the EU Marine Strategy Framework Directive (MSFD).
+### 0.7 Purpose of Disclosure & Environmental Safety Disclaimer
+This whitepaper is a defensive publication intended to establish public prior art and prevent private patent monopolization. Numerical values, functions, physical configurations, and anticipated performance metrics described herein represent illustrative examples to explain technical concepts and do not limit specific implementations or guarantee absolute performance benchmarks. This system does not automatically replace, modify, or extend statutory classification inspection standards, MARPOL regulations, or IMO anti-fouling rules, functioning solely as a supplementary protective layer. The sacrificial layer comprises calcium carbonate derived from barnacles, mussels, oysters, and synthetic $CaCO_3$ mimetics, mitigating synthetic microplastic discharges. Dislodged particles naturally decompose in ocean environments as natural $CaCO_3$ fragments, supporting compliance with the IMO AFS Convention and the EU Marine Strategy Framework Directive (MSFD).
 
-### 0.8 Independent Prior Invention Acknowledgment & Modesty Notice (v1.4 Triple Defense Clause Retained)
-This system design originated from the author's field-driven observations and was formulated after checking and reviewing existing public principles and prior art (such as $CaCO_3$ biomineralization, sacrificial anodes, and automotive crumple zones). The author combined and reconstructed these concepts from a personal perspective ("this is how I conceptualized it").
-The author does not claim to be the sole or first original inventor, and fully acknowledges the possibility that identical or similar technical motifs were independently conceived by other researchers or industry professionals.
-The primary objective of this publication is not to secure exclusive patent rights for a specific entity, but to register these technical details as public Prior Art, thereby providing legal grounds to refute novelty and non-obviousness in the event of private monopolistic patent filings by third parties. The Korean original text serves as the authoritative source (Original Authority); in the event of any discrepancies or interpretive variations in foreign translations, the Korean text shall take precedence.
+### 0.8 Independent Conception Recognition & Triple-Defense Clause (v1.4)
+This system design was independently synthesized and re-architected from the creator's field experience after reviewing existing public principles ($CaCO_3$ biomineralization, sacrificial anodes, automotive crumple zones).
+The creator does not claim sole initial discovery of individual underlying principles, fully acknowledging that similar technical motifs may have been conceived independently by other researchers or field engineers.
+The sole purpose of this disclosure is to register these technical specifications into the public domain as prior art, providing grounds for rejecting subsequent private patent claims by third parties regarding novelty and inventive step. The Korean original text serves as the primary governing standard; in the event of interpretive conflicts in foreign language translations, the Korean text takes precedence.
 
 ---
 
-## 1. Version History
+## 1. Revision History
 
-* v1.0 (2026-09-03): Established 3-point anchor architecture integrating deck splash zones, bow ice-belts, and stern propulsion zones. Integrated clamping scaffold framework, bio-sacrificial layer mechanisms, and dynamic control algorithms.
-* v1.1 (2026-09-03): Specified calcium carbonate ($CaCO_3$) composition for IMO AFS / EU MSFD compliance, added non-microplastic declarations, and formalized mathematical equations for impact energy attenuation and bio-regeneration growth rates.
-* v1.2 (2026-09-03): Integrated symmetric self-balancing ablation for aero-rotor rotational balance, added zero-tool quick replacement cartridge mechanisms, generalized mathematical parameter variables, and strictly aligned defensive terminology.
-* v1.3 (2026-09-05): Explicit inclusion of sessile marine organism keywords (barnacles, mussels, oysters), enhanced prior art searchability for patent examiners, and generalized L1 layer definition patch.
-* v1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause (prior art check confirmation, non-monopoly/non-exclusive claim, and personal perspective combination declaration).
-* v1.5 (2026-09-05): Expanded prior art scope covering intentional, spontaneous/natural untended bio-adhesion, and synthetic $CaCO_3$ mimetics across the sacrificial layer formation mechanism.
-* v1.6 (2026-09-06): Integrated cross-references to upper survival architecture (`ARCHITECTURE_STRATEGY v3.2.4`), APU controller (`chiplet-apu-multi-system-survival-architecture v2.6`), and CWP 4-Hardware mechanisms.
+* v1.0 (2026-09-03): Established 3-point anchoring architecture interlocking deck splash, bow ice-belt, and stern propulsion control zones. Integrated organic coupling between clamping scaffold layer and intentional bio-adhesion sacrificial layer with dynamic control algorithms.
+* v1.1 (2026-09-03): Added natural $CaCO_3$ composition specifications for spalled sacrificial layers to support IMO AFS and EU MSFD environmental compliance. Formulated dynamic impact energy dissipation and biogenic growth rate equations.
+* v1.2 (2026-09-03): Integrated self-balancing ablation specifications and zero-tool quick replacement mechanisms for helicopter rotor blade applications. Standardized generalized mathematical parameters and refined defensive terminology.
+* v1.3 (2026-09-05): Explicitly expanded keywords for calcareous bio-attaching organisms (barnacles, mussels, oysters) to enhance patent examiner searchability and generalized L1 layer definitions.
+* v1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clauses.
+* v1.5 (2026-09-05): Generalized sacrificial layer formation mechanisms to cover intentional attraction, natural untended bio-adhesion, and synthetic $CaCO_3$ mimetics.
+* v1.6 (2026-09-06): Integrated cross-references to upper survival architecture (`ARCHITECTURE_STRATEGY v3.2.4`), APU controller (`chiplet-apu-multi-system-survival-architecture v2.6`), and CWP 4-hardware mechanisms.
+* v1.7 (2026-09-27): Updated licensing scheme to standard dual-licensing (CC BY 4.0 & Apache-2.0) as of September 27, 2026, linked directly to root LICENSE files, replacing legacy DPL v1.0.
+* v1.8 (2026-09-28): Normalized repository name to kebab-case (Max-Life-Ice-Belt), corrected Section 8.1 ecosystem repo paths and organization namespaces (`soma-moa`), standardized Appendix C AI assistance disclosure, and updated Appendix D CITATION.cff URL.
 
 ---
 
 ## 2. Full-Stack Application Architecture (3-Tier Architecture)
 
 ### [L2] Protective Interface Layer
-* Deck Splash Zone (Zone A) — Mitigates primary impact energy and suppresses chloride penetration from seawater splash, salt spray, and upper ice debris during high-speed transit.
-* Bow Zone (Zone B) — Absorbs and dissipates high-energy impact forces and horizontal friction generated during forward icebreaking operations.
-* Stern Zone (Zone C) — Protects propeller nozzle housings and rudder surrounding plates from ice reverse-flow impacts and turbulent friction during astern icebreaking.
-* Aero-Rotor Zone (Zone Aero) — Absorbs particle collision loads on helicopter rotor blades and aircraft intake leading edges via ablation, mitigating rotational eccentric loads through symmetric self-balancing ablation.
+* Deck Splash Zone (Zone A) — Mitigates seawater splash, salt spray, and upper sea-ice fragment impacts generated during high-speed navigation and wave-breaking, suppressing salt penetration.
+* Bow Zone (Zone B) — Disperses and absorbs direct high-energy ice impact energy and horizontal frictional forces during forward polar navigation.
+* Stern Zone (Zone C) — Protects propulsion unit housings and rudder peripheral hull plating from reverse ice impacts and turbulent friction during astern icebreaking operations.
+* Rotary Zone (Zone Aero) — Absorbs particle impact loads on helicopter rotors and aircraft intake frontlines via ablative mechanics, mitigating rotational eccentric loads through self-balancing ablation.
 
 ### [L1] Sacrificial & Regenerative Fabric Layer
-* Scaffold Skeleton — Surface texture scaffold utilizing CWP-based rolling and clamping fastening techniques to evenly distribute loads across the underlying hull or structure.
-* Sacrificial Layer — Sacrificial layer composed of any form of $CaCO_3$-based calcareous accretions (including barnacles, mussels, and oysters via intentional induction, natural untended settlement, spontaneous growth, or synthetic $CaCO_3$ mimetics) or precision ablative cartridges.
-* Regeneration & Quick-Swap Algorithm — Detects localized detachment of the sacrificial layer and estimates biological re-attachment rates or zero-tool quick replacement service cycles.
+* Sub-Skeleton Structure — Surface corrugated scaffold structure employing CWP-based rolling and clamping fastening techniques, uniformly distributing loads across the primary hull.
+* Surface Fabric Structure — Sacrificial layer comprising $CaCO_3$-based calcareous formations (barnacles, mussels, oysters) or precision ablative cartridges formed via intentional attraction, natural untended settlement, or synthetic $CaCO_3$ mimetics.
+* Self-Regeneration & Quick Replacement Algorithms — Induces biological re-attachment following localized spallation or estimates lifecycle intervals for zero-tool quick-release cartridge replacement.
 
 ### [L0] Infrastructure & Fastening Layer
-* Substrate Structure — Includes hull plating, bulwark structures, ice-belt stiffeners, propeller duct nozzle outer faces, rudder protection surfaces, and aircraft rotor frames.
-* Fastening Mechanism — Eliminates hull welding or perforations, maintaining zero-point retention via edge clamping, rolling locks, and one-touch quick-release slots.
+* Vessel & Structural Frame — Primary hull plating, bulwark exteriors, ice-belt stiffeners, propeller duct nozzle exteriors, rudder forward protection faces, and aircraft rotor frames.
+* Fastening Mechanism — Eliminates base metal welding or penetrating holes, maintaining zero-point retention force via edge clamping, rolling locks, and one-touch slot structures.
 
 ### 2.5 AI Role & Model Architecture Definition
-The adhesion and detachment prediction modules in this system are not restricted to specific software frameworks or machine learning algorithms. They are defined as abstracted inferential entities encompassing on-device edge computing, Small Language Models (SLM), and satellite-linked central analysis servers. These models process real-time data on water temperature, salinity, flow velocity, impact frequency, and rotational eccentric loads to dynamically estimate replacement intervals and system lifespan.
+The adhesion and spallation prediction module applied in this system is not restricted to specific software frameworks or algorithms. It is defined as an abstract inference agent encompassing on-device edge computing resources, small language models (SLM), and satellite-linked central analysis servers. It dynamically processes real-time water temperature, salinity, flow velocity, impact frequency, and rotational eccentric load data to compute remaining service life and replacement schedules.
 
 ---
 
-## 3. Core System Blocks & Operation Mechanisms
+## 3. Core System Blocks & Operational Mechanisms
 
-### A. 3-Point Anchor & Aero Sensing (Absolute Protection Points)
-* Zone A (Deck Splash), Zone B (Bow Ice-Belt), Zone C (Stern Propulsion), and Zone Aero (Rotor Balance) are designated as absolute protection zones.
+### A. 3-Point Anchor & Aero Sensing Units
+* Designates Zone A (Deck Splash Line), Zone B (Bow Ice-Belt Line), Zone C (Stern Propulsion Line), and Zone Aero (Rotary Balance Line) as absolute protection boundaries.
 
-### B. Scaffold-Flesh Separated Sacrificial Structure & Mathematical Modeling
-* External Inputs — Sea ice impact loads, hydrodynamic friction, chloride ingress, and high-speed aero-particle erosion.
-* Dynamic Mechanism — Upon external impact, the surface calcareous layer (composed of barnacles, mussels, oysters, spontaneous bio-layers, synthetic $CaCO_3$ mimetics) or ablative cartridge fractures and sheds, converting kinetic energy into thermal and positional energy, while the underlying scaffold remains structurally intact.
+### B. Scaffold-Fabric Separated Sacrificial Structure & Mathematical Modeling
+* External Input Conditions — Sea-ice physical impact, seawater friction, salt spray, and high-speed aero-particle friction loads operate concurrently.
+* Dynamic Processing Mechanism — Upon external impact, the calcareous sacrificial layer (barnacles, mussels, oysters, natural bio-adhesion, synthetic $CaCO_3$ mimetics) and ablative cartridges fracture and spall, converting kinetic energy into thermal and potential energy. The underlying scaffold remains undamaged.
 * 1. Sacrificial Energy Absorption Model
-    * Kinetic Energy of Ice/Particle Impact: $$E_{ice} = \frac{1}{2} m_{ice} v^2$$
-    * Energy Dissipated by Sacrificial Layer: $$E_{sac} = \eta \cdot \sigma_c \cdot A \cdot t$$
-    * Variable Definitions — $\sigma_c$: Compressive strength of sacrificial layer (material-dependent variable), $A$: Impact area, $t$: Effective layer thickness, $\eta$: Crushing efficiency coefficient (variable parameter depending on impact conditions).
+    * Ice/Particle Impact Kinetic Energy: $$E_{ice} = \frac{1}{2} m_{ice} v^2$$
+    * Sacrificial Layer Crush Absorption Energy: $$E_{sac} = \eta \cdot \sigma_c \cdot A \cdot t$$
+    * Variable Definitions — $\sigma_c$: Sacrificial layer compressive strength, $A$: Impact area, $t$: Effective layer thickness, $\eta$: Crushing efficiency coefficient.
     * Zero-Downtime Survival Condition: $$E_{scaffold} = E_{ice} - E_{sac} < E_{yield\_scaffold}$$
-    * Ensures that residual energy following sacrificial layer crushing does not exceed the yield strength of the underlying scaffold, preserving skeletal integrity. (`LS-DYNA` Explicit Dynamics material models `*MAT_CRUSHABLE_FOAM` and `*MAT_ELASTIC` may be applied.)
+    * Ensures residual energy following impact does not exceed the scaffold yield energy, preserving structural skeleton integrity (`LS-DYNA` explicit dynamics models using `*MAT_CRUSHABLE_FOAM` and `*MAT_ELASTIC` may be referenced).
 * 2. Biogenic Growth Rate Estimation Model
-    * Bio-Coverage Growth Differential Equation: $$\frac{dC}{dt} = r(T,S) \cdot C \cdot \left(1 - \frac{C}{K_{max}}\right) \cdot f(R_a)$$
+    * Self-Regeneration Coverage Growth Equation: $$\frac{dC}{dt} = r(T,S) \cdot C \cdot \left(1 - \frac{C}{K_{max}}\right) \cdot f(R_a)$$
     * Variable Definitions — $C$: Coverage percentage (%), $K_{max}$: Maximum saturation coverage, $f(R_a)$: Scaffold surface roughness function.
-    * Environmental Growth Rate Function: $$r(T,S) = r_0 \cdot Q_{10}^{\frac{T-T_0}{10}} \cdot \exp\left(-\alpha (S - S_{opt})^2\right)$$
-    * $T$: Water temperature, $S$: Salinity, $S_{opt}$: Optimal salinity for local species. Used to dynamically estimate regeneration cycles based on specific sea conditions.
-* Output Results — Mitigates direct damage to primary hull plates, generating telemetry signals for maintenance scheduling, symmetric self-balancing control, and re-attachment monitoring.
+    * Environmental Growth Rate Equation: $$r(T,S) = r_0 \cdot Q_{10}^{\frac{T-T_0}{10}} \cdot \exp\left(-\alpha (S - S_{opt})^2\right)$$
+    * $T$: Water temperature, $S$: Salinity, $S_{opt}$: Optimal regional salinity. Utilized for flexible estimation of regeneration cycles across operating sea zones.
+* System Output — Mitigates direct damage to primary hull plating, generating maintenance signals, self-balancing ablation controls, and re-attachment monitoring data for spalled zones.
 
-### C. Lifetime Extension & Operational Continuity
-* Operational Continuity — Encompasses the entire lifecycle from initial bio-spore settling to multi-year continuous operation and zero-tool quick replacement cycles. The system does not promise permanent invulnerability, but aims to realistically extend maintenance intervals.
+### C. Self-Regeneration & Lifecycle Extension Specification
+* Operational Continuity Scope — Encompasses initial biological spore settlement following impact through continuous operation and zero-tool quick-release cartridge replacement cycles, targeting maximum service life extension.
 
-### D. Zero-Downtime Failover & Self-Balancing Ablation
-* Isolation & Balancing — Upon localized sacrificial layer destruction, the dynamic control loop isolates the damaged segment within 100ms. On rotating bodies, it triggers micro-ablation on the diametrically opposed cartridge (Self-balancing) to mitigate eccentric vibration.
-
----
-
-## 4. Dynamic Resource Management & Safety Control
-
-* Rate Limiter — Dampens impact load spikes caused by continuous ice collisions, stabilizing forces transmitted to the scaffold mountings.
-* Tri-State Isolation — Upon detecting sensor or mounting anomalies, transitions electrical/control connections to a High-Impedance state within 100ms, suppressing fault propagation to main vessel control systems.
+### D. Zero-Downtime Fault Transfer & Self-Balancing Ablation
+* Fault Isolation & Balance Control — Isolates dynamic control within 100ms upon localized sacrificial layer failure, engaging micro-self-balancing ablation on symmetrical cartridge positions in rotary applications to suppress eccentric vibration.
 
 ---
 
-## 5. Standard Compliance & Legal Boundaries
+## 4. Dynamic Resource Management & Defensive Safety Control
 
-* Public Standards Adoption — Incorporates ISO 8501 surface cleanliness standards, classification society Ice Class Rules, and IMO AFS / EU MSFD guidelines as reference benchmarks.
-* Non-Replacement of Statutory Equipment — This system does not directly replace mandatory structural reinforcements or statutory anti-fouling coatings required by maritime laws, but operates as an auxiliary protective armor. The sacrificial layer utilizes bio-origin or synthetic $CaCO_3$ components to assist in meeting environmental standards.
+* Rate Limiter — Regulates continuous collision load spikes, stabilizing force transmission to fastening structures.
+* Tri-State Isolation — Shifts system interfaces to a High-Impedance state within 0.1s (100ms) upon sensor or fastening anomaly detection, preventing fault propagation to main control systems.
 
 ---
 
-## 6. Future Applications & Industrial Expansion
+## 5. Standard Utilization & Legal Boundaries
 
-* Intended for expansion into smart port breakwater armors, offshore wind turbine monopile scour protection, CWP floating structures, and helicopter/aircraft rotor leading-edge protection.
+* Public Standard Reference — Adopts ISO 8501 surface cleanliness standards, classification Ice Class Rules, IMO AFS, and EU MSFD guidelines as reference benchmarks.
+* Non-Replacement of Statutory Equipment — Does not directly replace mandatory structural stiffeners or statutory anti-fouling coatings, operating as a supplementary protective layer. Spalled sacrificial particles contain calcium carbonate ($CaCO_3$), assisting environmental compliance.
+
+---
+
+## 6. Future Applications & Industrial Expansion Scope
+
+* Targeted for expansion into smart port breakwaters, offshore wind foundation scour protection, CWP floating bodies, and helicopter/aircraft rotor blade leading-edge armor.
 
 ---
 
 ## 7. Practical Protection
 
 * Quadruple Defense Architecture
-    * Timestamp System — Establishes prior invention dates via timestamped public commits.
-    * DPL License — Applies Defensive Patent License v1.0 to counter private patent monopolization.
-    * Prior Use Right — Secures legal Prior Use Rights (e.g., Korean Patent Act Art. 103, 35 U.S.C. §273) for field applications and prototype builds.
-    * Trade Secret Separation — Maintains public core concepts via defensive publication while isolating specific chemical formulations, clamping torque specifications, and model weight parameters as Trade Secrets.
+    * Timestamping System — Proves initial conception date via cryptographic timestamps.
+    * Standard Dual-Licensing — Applies CC BY 4.0 (documentation) and Apache-2.0 (code/implementations) to prevent private monopolization.
+    * Prior Use Rights — Maintains prior use rights under Article 103 of the Korean Patent Act and 35 U.S.C. §273 for field deployment and prototyping.
+    * Trade Secret Separation — Discloses core architecture concepts via whitepapers while maintaining specific weightings and exact dimensions as confidential trade secrets.
 
 ---
 
-## 8. Sources
+## 8. Sources & Document Completeness Declaration
 
-* **Linked Survival Architecture:** GitHub - `soma-moa / ARCHITECTURE_STRATEGY.md v3.2.4`
-* **Linked APU Controller:** GitHub - `deundeuni / chiplet-apu-multi-system-survival-architecture v2.6`
-* **Linked CWP 4-Hardware Repositories:**
-  * GitHub - `deundeuni / CWP-Entry`
-  * GitHub - `deundeuni / CWP-Rolling-Self-Align-Battery-Swap-System`
-  * GitHub - `deundeuni / CWP-Battery-Swap`
-  * GitHub - `deundeuni / CWP-Clamping-Battery-Swap-System`
-* **Canonical Gateway:** `somamoa.ai.kr` (Canonical Gateway)
+### 8.1 Ecosystem Repositories & Related Sub-Whitepapers
+* **Linked Survival Architecture & APU Controller:** GitHub - `soma-moa / chiplet-apu-multi-system-survival-architecture`
+* **Linked CWP 4 Hardware Repositories:**
+  * GitHub - `soma-moa / CWP-Entry`
+  * GitHub - `soma-moa / CWP-Rolling-Self-Align-Battery-Swap-System`
+  * GitHub - `soma-moa / CWP-Battery-Swap`
+  * GitHub - `soma-moa / CWP-Clamping-Battery-Swap-System`
+* **Canonical Gateway:** `somamoa.ai.kr`
+
+### 8.2 Standards, Precedents & References
 * **International Standards:** ISO 8501, IMO AFS Convention, EU MSFD, Classification Society Ice Class Rules (KR, DNV, ABS).
-* **Public Domain Prior Art:** Béla Barényi (1951), Automotive Passive Safety Architecture (Crumple Zone & Airbag).
-* **Legal Precedents:** Korean Patent Act Article 103, 35 U.S.C. §273.
-* **Document Completeness:** This document possesses self-contained engineering and legal integrity.
-* **Original Authority Clause:** The Korean original text serves as the official authoritative source (Original Authority). In the event of any conflict in interpretation between translations, the Korean text shall prevail.
+* **Prior Art References:** Béla Barényi (1951), Automotive Passive Safety Architecture (Crumple Zone & Airbag).
+* **Legal Precedents:** Article 103 of the Korean Patent Act, 35 U.S.C. §273.
+* **Document Completeness:** This document possesses standalone technical completeness as a unit specification.
+* **Original Governing Standard:** The Korean original text serves as the primary governing standard; translations are provided for reference purposes only.
+
+### 8.3 Copyright & License Notice
+Textual expressions in this document are published under the Creative Commons Attribution 4.0 International License (CC BY 4.0), while derivative code and executable implementations are dual-licensed under the Apache License 2.0 (Apache-2.0). The authors (deundeuni / soma-moa) claim no exclusive patent rights regarding ideas disclosed herein. Detailed license terms follow the LICENSE file in this repository.
 
 ---
 
@@ -163,15 +167,17 @@ The adhesion and detachment prediction modules in this system are not restricted
 
 ## Appendix B: Version History
 * Version 1.0 (2026-09-03): Initial Defensive Publication Release.
-* Version 1.1 (2026-09-03): $CaCO_3$-based biogenic sacrificial layer specification & mathematical formulation.
+* Version 1.1 (2026-09-03): CaCO3-based biogenic sacrificial layer specification & mathematical formulation.
 * Version 1.2 (2026-09-03): Aero-rotor self-balancing ablation & zero-tool quick replacement integration. Mathematical parameter generalization & strict defensive terminology alignment.
 * Version 1.3 (2026-09-05): Explicit inclusion of mussels, oysters, and sessile marine organism keywords for enhanced prior art searchability & generalized L1 layer definition.
-* Version 1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause (prior art check confirmation, non-monopoly/non-exclusive claim, and personal perspective combination declaration).
-* Version 1.5 (2026-09-05): Expanded prior art scope covering intentional, spontaneous/natural untended bio-adhesion, and synthetic $CaCO_3$ mimetics.
-* Version 1.6 (2026-09-06): Integrated cross-references to upper survival architecture (`ARCHITECTURE_STRATEGY v3.2.4`), APU controller (`chiplet-apu-multi-system-survival-architecture v2.6`), and CWP 4-Hardware mechanisms.
+* Version 1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause.
+* Version 1.5 (2026-09-05): Expanded prior art scope covering intentional, spontaneous/natural untended bio-adhesion, and synthetic CaCO3 mimetics.
+* Version 1.6 (2026-09-06): Integrated cross-references to upper survival architecture (ARCHITECTURE_STRATEGY v3.2.4), APU controller (chiplet-apu-multi-system-survival-architecture v2.6), and CWP 4-Hardware mechanisms.
+* Version 1.7 (2026-09-27): Replaced legacy DPL v1.0 with standard dual licensing (CC BY 4.0 & Apache-2.0) as of 2026-09-27, strictly linked to root LICENSE file.
+* Version 1.8 (2026-09-28): Kebab-case repository name normalization (Max-Life-Ice-Belt), Section 8.1 ecosystem repo path/organization namespace correction (soma-moa), Appendix C AI disclosure standard unification, and Appendix D CITATION.cff URL update.
 
 ## Appendix C: AI Assistance Disclosure
-* Draft Generation: Meta AI / Structure Optimization: Google Gemini / Final Audit: Anthropic Claude
+* Technical & Legal Drafting Support: Generic Generative AI Text Refinement & Structuring Tools (범용 생성형 AI 텍스트 정제 및 구조화 도구)
 
 ## Appendix D: Citation Format (CITATION.cff)
 ```yaml
@@ -180,10 +186,10 @@ message: "If you use or reference this defensive publication framework, please c
 authors:
   - family-names: "deundeuni"
     given-names: "soma-moa"
-title: "MAX-LIFE ICE-BELT: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
-version: "1.6"
-date-released: 2026-09-06
-url: "[https://github.com/soma-moa/MAX-LIFE-ICE-BELT](https://github.com/soma-moa/MAX-LIFE-ICE-BELT)"
+title: "Max-Life-Ice-Belt: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
+version: "1.8"
+date-released: 2026-09-28
+url: "[https://github.com/soma-moa/Max-Life-Ice-Belt](https://github.com/soma-moa/Max-Life-Ice-Belt)"
 keywords:
   - "Defensive Publication"
   - "Prior Art"
