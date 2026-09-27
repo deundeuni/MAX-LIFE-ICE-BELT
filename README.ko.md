@@ -1,10 +1,10 @@
-# MAX-LIFE ICE-BELT — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적·자생적 따개비·홍합·굴 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (Ver. 1.6 최종 교정본)
+# Max-Life-Ice-Belt — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적·자생적 따개비·홍합·굴 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (v1.8 Prior-Art Refined Baseline)
 
 * 공식 문서 분류: 방어적 선행기술 공개 백서 (Defensive Publication / Prior Art)
-* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.6): 2026-09-06
+* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.8): 2026-09-28
 * 원천 지적재산권(IP) 보유자: 소마모아 (soma-moa / 구상자: deundeuni)
-* 공식 저장소: github.com/soma-moa | 공식 도메인: somamoa.ai.kr
-* 적용 라이선스: CC BY 4.0 & DPL v1.0 (Defensive Patent License)
+* 공식 저장소: github.com/soma-moa/Max-Life-Ice-Belt | 공식 도메인: somamoa.ai.kr
+* 적용 라이선스: Creative Commons Attribution 4.0 International (CC BY 4.0) & Apache License 2.0 (Apache-2.0) 이원화 체계 적용 (기존 DPL v1.0은 2026년 9월 27일 자로 본 표준 라이선스 체계로 전면 대체됨)
 * 원안 언어 고지: 본 문서의 한국어 원문이 법적·기술적 기준 원본이며, 영문 번역본은 참고용이다. 해석상 충돌 발생 시 한국어 원문의 서술과 정의가 최우선한다.
 
 ---
@@ -19,7 +19,7 @@
 본 명세서에 개시된 클램핑 스캐폴드 기반의 0점(Zero-Point) 기준 고정 방식 및 희생층 자가재생 메커니즘은 전체 보호 시스템의 최상위 기본 기준점(Master Reference Framework)으로 기능한다.
 본 설계는 공지기술인 자동차 패시브 세이프티(Passive Safety) 철학(Béla Barényi, 1951)의 구조적 희생 개념을 해양 및 항공 환경으로 확장 원용한다. 요철 스캐폴드의 물리적 재질(강재, 알루미늄 합금, FR-복합재, 고내식성 합금 등), 따개비·홍합·굴 등 해양 부착 생물 유도 및 착생 방식(표면 물리적 조도 제어, 미세 미소전류 인가, 생물학적 유도물질 도포, 자연적 착생 방치, 합성 $CaCO_3$ 모사체 도포 등), 부착층 두께 범위, 클램핑 메커니즘(볼트 체결, 롤링 락, 영구자석/전자기 결합, 음압 흡착 방식 등) 및 AI 기반 부착·탈락 예측 모델이 단독 또는 복합 추가되는 모든 확장 실현 형태는 본 기본 개념의 부가적 응용 조합이며, 본 선행기술의 포괄적 보호 범주에 포함될 수 있다.
 
-* **상위 아키텍처 및 APU 제어기 연계 명시:** 본 ICE-BELT의 스캐폴드 0점 고정 및 100ms 국소 격리 제어는 `ARCHITECTURE_STRATEGY v3.2.4`의 범용 생존 아키텍처 및 `chiplet-apu-multi-system-survival-architecture v2.6`의 Tri-State Isolation, T-Reg 억제 논리를 해양 물리 환경에 구현한 하위 구현체이다.
+* **상위 아키텍처 및 APU 제어기 연계 명시:** 본 Max-Life-Ice-Belt의 스캐폴드 0점 고정 및 100ms 국소 격리 제어는 `ARCHITECTURE_STRATEGY v3.2.4`의 범용 생존 아키텍처 및 `chiplet-apu-multi-system-survival-architecture v2.6`의 Tri-State Isolation, T-Reg 억제 논리를 해양 물리 환경에 구현한 하위 구현체이다.
 
 ### 0.3 유기적 무중단 구조 및 무용접 원칙 (Zero-Downtime & Non-Welding)
 본 구조체는 기존 선체 외판 및 해양 구조물 본체에 대한 전기적·물리적 손상(고열 용접, 관통 천공 등)을 수반하는 개조 작업을 엄격히 방지하는 것을 원칙으로 한다. 특정 국소 영역의 희생층이 고출력 유빙 충격 및 마찰로 인해 완파·탈락하더라도 전체 방어 시스템의 연속적 보호 기능이 정지되지 않는 유기체적 무중단 생존력(Zero-Downtime)을 지향한다. 하부 스캐폴드는 분할된 독립 다중 고정 구조를 유지하여 단일 장애점(SPOF, Single Point of Failure) 발생을 완화하며, 외부 희생층이 파열된 후에도 기계적 스캐폴드 골격은 원형을 유지하여 차세대 생물체의 재부착을 지속적으로 유도한다.
@@ -53,6 +53,8 @@
 * v1.4 (2026-09-05): 0.8절 창안자 삼중 방어 조항(선행기술 조사 확인, 최초/독점 미주장, 주관적 관점의 조합·재구성 명시) 정교화 패치.
 * v1.5 (2026-09-05): 희생층 형성 메커니즘의 최상위 상위개념 포괄화 패치 (의도적 유도, 자연적 착생 방치, 자생적 부착 유지 및 합성 CaCO3 모사체 활용 행위 일체 포함).
 * v1.6 (2026-09-06): 상위 생존 아키텍처(ARCHITECTURE_STRATEGY v3.2.4), APU 제어기(chiplet-apu-multi-system-survival-architecture v2.6) 및 CWP 4대 하드웨어 메커니즘 상호 참조 연계 패치.
+* v1.7 (2026-09-27): 라이선스 표기를 2026-09-27 자로 표준 라이선스(CC BY 4.0 & Apache-2.0 이원화 체계)로 재편하고 저장소 루트의 LICENSE 파일과 정밀 연동함. 기존 커스텀 DPL v1.0 표기를 공식 대체함.
+* v1.8 (2026-09-28): 리포명 케밥케이스 표기 정제(Max-Life-Ice-Belt), 8.1절 계정 네임스페이스(soma-moa 조직 계정 이관 반영) 및 참조 경로 통합 정정, Appendix C AI 고지 문구 생태계 표준 표기로 통일, Appendix D CITATION.cff URL 정정 반영.
 
 ---
 
@@ -131,27 +133,32 @@
 
 * 4층 방어 체계 (Quadruple Defense Architecture)
     * 타임스탬프 체계 — 타임스탬프 기반 선행 구상 시점 증명.
-    * DPL 라이선스 — Defensive Patent License v1.0 적용으로 타 주체의 사적 독점화 방지.
-    * 선사용권 보유 — 현장 적용 및 시제품 제작 행위에 대한 법적 선사용권(Prior Use Right) 유지.
+    * 표준 이원화 라이선스 — 저작권(CC BY 4.0) 및 파생 코드/구현물(Apache-2.0) 표준 라이선스 이원화 적용으로 타 주체의 사적 독점화 방지 (기존 DPL v1.0 표기는 전면 대체됨).
+    * 선사용권 보유 — 대한민국 특허법 제103조 및 미국 특허법 35 U.S.C. §273에 따른 현장 적용 및 시제품 제작 행위에 대한 법적 선사용권(Prior Use Right) 유지.
     * 영업비밀 분리 — 원천 개념은 공개 백서로 방어하되, 세부 가중치 및 구체적 치수는 영업비밀(Trade Secret)로 분리하여 비공개 보관한다.
 
 ---
 
 ## 8. 출처 및 문서 완전성 선언 (Sources)
 
-* **연계 생존 아키텍처:** GitHub - `soma-moa / ARCHITECTURE_STRATEGY.md v3.2.4`
-* **연계 APU 제어기:** GitHub - `deundeuni / chiplet-apu-multi-system-survival-architecture v2.6`
+### 8.1 소마모아 생태계 저장소 및 하위 백서 연계
+* **연계 생존 아키텍처 및 APU 제어기:** GitHub - `soma-moa / chiplet-apu-multi-system-survival-architecture`
 * **연계 CWP 4대 하드웨어 저장소:**
-  * GitHub - `deundeuni / CWP-Entry`
-  * GitHub - `deundeuni / CWP-Rolling-Self-Align-Battery-Swap-System`
-  * GitHub - `deundeuni / CWP-Battery-Swap`
-  * GitHub - `deundeuni / CWP-Clamping-Battery-Swap-System`
+  * GitHub - `soma-moa / CWP-Entry`
+  * GitHub - `soma-moa / CWP-Rolling-Self-Align-Battery-Swap-System`
+  * GitHub - `soma-moa / CWP-Battery-Swap`
+  * GitHub - `soma-moa / CWP-Clamping-Battery-Swap-System`
 * **최상위 관문:** `somamoa.ai.kr` (Canonical Gateway)
+
+### 8.2 규격, 판례 및 참고 문헌
 * **국제 표준 및 규격:** ISO 8501, IMO AFS Convention, EU MSFD, 각국 선급(KR, DNV, ABS) Ice Class Rules.
 * **공지기술 원용:** Béla Barényi (1951), Automotive Passive Safety Architecture (Crumple Zone & Airbag).
-* **법적 판례:** 대한민국 특허법 제103조, 미국 특허법 35 U.S.C. §273.
+* **법적 근거:** 대한민국 특허법 제103조, 미국 특허법 35 U.S.C. §273.
 * **문서 완결성:** 본 문서는 단위 명세서로서 독자적인 기술적 완결성을 가진다.
 * **원안 우선 조항:** 한국어 원문이 기준 원본(Original Authority)이며, 타 언어 번역본에서 해석 충돌 발생 시 한국어 원문의 서술과 정의를 최우선으로 적용한다.
+
+### 8.3 저작권 및 라이선스 고지 (Copyright & License Notice)
+본 문서의 텍스트 표현물은 Creative Commons Attribution 4.0 International (CC BY 4.0)에 따라 공개되며, 파생 코드 및 실행 구현물에는 Apache License 2.0 (Apache-2.0)을 이원화 적용한다. 저자(deundeuni / soma-moa)는 본 문서에 기술된 아이디어에 대해 어떠한 배타적 특허권도 주장하지 않는다. 상세 라이선스 조건은 본 저장소의 LICENSE 파일을 따른다.
 
 ---
 
@@ -166,9 +173,11 @@
 * Version 1.4 (2026-09-05): Refined Founder Statement Section 0.8 with triple-defense clause.
 * Version 1.5 (2026-09-05): Expanded prior art scope covering intentional, spontaneous/natural untended bio-adhesion, and synthetic CaCO3 mimetics.
 * Version 1.6 (2026-09-06): Integrated cross-references to upper survival architecture (ARCHITECTURE_STRATEGY v3.2.4), APU controller (chiplet-apu-multi-system-survival-architecture v2.6), and CWP 4-Hardware mechanisms.
+* Version 1.7 (2026-09-27): Replaced legacy DPL v1.0 with standard dual licensing (CC BY 4.0 & Apache-2.0) as of 2026-09-27, strictly linked to root LICENSE file.
+* Version 1.8 (2026-09-28): Kebab-case repository name normalization (Max-Life-Ice-Belt), Section 8.1 ecosystem repo path/organization namespace correction (soma-moa), Appendix C AI disclosure standard unification, and Appendix D CITATION.cff URL update.
 
 ## Appendix C: AI Assistance Disclosure
-* Draft Generation: Meta AI / Structure Optimization: Google Gemini / Final Audit: Anthropic Claude
+* Technical & Legal Drafting Support: Generic Generative AI Text Refinement & Structuring Tools (범용 생성형 AI 텍스트 정제 및 구조화 도구)
 
 ## Appendix D: Citation Format (CITATION.cff)
 ```yaml
@@ -177,10 +186,10 @@ message: "If you use or reference this defensive publication framework, please c
 authors:
   - family-names: "deundeuni"
     given-names: "soma-moa"
-title: "MAX-LIFE ICE-BELT: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
-version: "1.6"
-date-released: 2026-09-06
-url: "[https://github.com/soma-moa/MAX-LIFE-ICE-BELT](https://github.com/soma-moa/MAX-LIFE-ICE-BELT)"
+title: "Max-Life-Ice-Belt: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
+version: "1.8"
+date-released: 2026-09-28
+url: "[https://github.com/soma-moa/Max-Life-Ice-Belt](https://github.com/soma-moa/Max-Life-Ice-Belt)"
 keywords:
   - "Defensive Publication"
   - "Prior Art"
