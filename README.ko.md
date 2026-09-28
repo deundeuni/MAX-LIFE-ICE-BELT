@@ -1,7 +1,7 @@
-# Max-Life-Ice-Belt — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적·자생적 따개비·홍합·굴 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (v1.92 Prior-Art Refined Baseline)
+# Max-Life-Ice-Belt — 상시 해수 접촉 구조물, 쇄빙선 갑판 스플래시·선수·선미, 클램핑 스캐폴드, 의도적·자생적 따개비·홍합·굴 희생장갑 및 항공 회전체 어블레이티브 시스템 기술 명세서 (v1.95 Prior-Art Refined Baseline)
 
 * 공식 문서 분류: 방어적 선행기술 공개 백서 (Defensive Publication / Prior Art)
-* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.92): 2026-09-28
+* 최초 구상일: 2026-09-02 / 최종 개정일 (v1.95): 2026-09-28
 * 원천 지적재산권(IP) 보유자: 소마모아 (soma-moa / 구상자: deundeuni)
 * 공식 저장소: github.com/soma-moa/Max-Life-Ice-Belt | 공식 도메인: somamoa.ai.kr
 * 적용 라이선스: Creative Commons Attribution 4.0 International (CC BY 4.0) & Apache License 2.0 (Apache-2.0) 이원화 체계 적용 (기존 DPL v1.0은 2026년 9월 27일 자로 본 표준 라이선스 체계로 전면 대체됨)
@@ -34,26 +34,30 @@
 본 설계 메커니즘은 극지 항해용 쇄빙선, 일반 상선 충돌부, 불워크 외현 스플래시 벨트, 방파제 전면부, 해상풍력 하부 기초 구조물(하부 승강장 포함), 부유식 해양 플랜트(FLNG/FPSO), CWP 계류체 등 동적 해수 접촉, 유빙 충돌, 말단 비산염분이 발생하는 모든 해양 구조물의 외각 보호층에 포괄적으로 적용 가능하다.
 더불어 본 메커니즘의 항공 및 회전체 적용 시, 국소 탈락에 따른 회전 불균형(Dynamic Unbalance)을 완화하기 위한 대칭 자율 박리(Self-balancing Ablation) 및 원터치 클램핑 슬롯 기반의 무공구 퀵 릴리즈 카트리지(Zero-Tool Quick Replacement Cartridge) 교체 구조를 선택적으로 결합할 수 있다.
 
-### 0.7 공개 목적 및 환경 안전성 한계 고지
-본 문서는 사적 독점권 설정을 방지하고 기술의 공공성을 확립하기 위한 방어적 선행기술 공개(Defensive Publication) 자료이다. 명세서 내 수치, 기능, 물리적 구성, 예상 성능 서술은 기술 사상을 설명하기 위한 예시적 서술이며 특정 실제 구현 형태를 일률적으로 한정하거나 절대적 성능 수치를 보장하지 않는다. 본 시스템은 기존 법정 선급 검사 기준, 해양환경오염방지협약(MARPOL), 국제해사기구(IMO) 방오 규정을 자동 대체·변경·확장하지 않으며 보조적·참고적 보호 구조체로서만 활용된다. 본 희생층은 따개비, 홍합, 굴 기원의 생물 무기질 및 합성 $CaCO_3$ 모사체를 포함하는 탄산칼슘 성분을 주요 성분으로 포함하여, 합성수지계 미세플라스틱(Microplastic) 유출을 완화하도록 설계된다. 탈락 시 해양에서 자연 분해되는 천연 탄산칼슘 입자로서 IMO AFS 협약 및 EU 해양전략 프레임워크(MSFD) 규제 대응을 보조하는 환경 친화적 특성을 지향한다. 단, 외래종 이동 위험에 관해서는 0.9절의 한계 고지를 따른다.
+### 0.7 공개 목적 및 법적 지위 고지
+본 문서는 사적 독점권 설정을 방지하고 기술의 공공성을 확립하기 위한 방어적 선행기술 공개(Defensive Publication) 자료이다. 명세서 내 수치, 기능, 물리적 구성, 예상 성능 서술은 기술 사상을 설명하기 위한 예시적 서술이며 특정 구현 형태를 한정하거나 절대적 성능을 보장하지 않는다. 본 시스템은 법정 선급 검사 기준, 해양환경오염방지협약(MARPOL), IMO의 협약·지침 및 각국의 규정을 대체·변경·면제하지 않으며 보조적·참고적 보호 구조체로서만 활용된다. 환경·생물안전 관련 한계와 규제 준수 권고는 0.9절에 통합하여 고지한다.
 
 ### 0.8 독립적 선행 구상 인정 및 겸양 고지 (v1.4 삼중 방어 조항 유지)
 본 시스템 설계는 창안자가 현장 문제의식에서 출발하여 기존 공개된 원리 및 공지기술($CaCO_3$ 생물광물화, 희생 양극, 자동차 크럼플존 등)이 이미 존재하는지 여부를 확인·검토한 후, 창안자 개인의 관점에서 "나는 이렇게 생각했다"는 방식으로 조합·재구성한 것이다.
 "본인이 혼자 최초로 독자 구상했다"고 주장하지 않으며, 동일하거나 유사한 기술적 모티프가 타 연구자 또는 산업 현장에서 독립적으로 구상되었을 가능성을 충분히 인정한다.
 본 공개의 목적은 특정 주체의 배타적 특허 독점권 확보가 아니며, 기술 내역을 공공의 선행기술(Prior Art)로 등록하여 타 주체의 사적 독점 출원 시 신규성·진보성 부정의 거절 근거를 제공하는 데 있다. 한국어 원문이 기준 원본(Original Authority)이며, 타 언어 번역본에서 의미상 충돌이나 해석 차이 발생 시 한국어 원문의 서술과 정의를 최우선 기준으로 적용한다.
 
-### 0.9 생물 이동 매개 가능성 및 기항국 규정 관련 한계 고지 (Biosecurity Limitation Notice)
-본 명세서가 제안하는 희생층은 따개비·홍합·굴 등 부착 생물을 의도적으로 유도하거나 자연 착생 상태로 두는 구성을 포함한다. 그런데 선체에 부착생물이 쌓이는 현상은, 국제해사기구(IMO)가 2011년 결의 MEPC.207(62)로 채택한 「선박 부착생물의 통제 및 관리에 관한 지침(2011 Guidelines for the control and management of ships' biofouling to minimize the transfer of invasive aquatic species)」에서 외래 수생생물 이동의 중요한 수단으로 서술되어 있으며, 이 결의는 회원국에 지침의 이행을 요청하고 있다. 또한 일부 국가와 지역은 입항 선박에 부착생물 관리를 요구하는 자체 규정을 두고 있다. 예를 들어 뉴질랜드 1차산업부(MPI)의 Craft Risk Management Standard는 2018년부터 입항 선박에 부착생물이 없는 선체(대부분의 선박에서 점액층 정도만 허용)를 요구하는 것으로 알려져 있고(이후 개정·통합됨), 미국 캘리포니아주도 IMO 지침에 맞춘 선체 부착생물 관리 규정(California Code of Regulations, title 2, section 2298.1 et seq.)을 두고 있다. 각 규정의 현재 세부 요건은 개정될 수 있으므로 실제 적용 전에 확인이 필요하다.
+### 0.9 환경·생물안전 및 규제 준수 고지 (Environmental, Biosecurity & Compliance Notice)
+**환경 친화성의 범위.** 본 희생층은 따개비, 홍합, 굴 기원의 생물 무기질 및 합성 $CaCO_3$ 모사체를 포함하는 탄산칼슘 성분을 주요 성분으로 하며, 탈락 시 해양에서 자연 분해되는 천연 탄산칼슘 입자로서 합성수지계 미세플라스틱(Microplastic) 유출을 완화하는 방향을 지향한다. 이 서술은 미세플라스틱 완화 측면에 한정되며 외래종 이동 위험의 완화를 의미하지 않는다. 본 구성은 살생물질의 방출을 전제로 하지 않는다는 점에서 IMO AFS 협약이 규제하는 유해 방오 시스템과 성격이 다르다. 이는 환경적 우열을 뜻하지 않는다.
+
+**생물 이동 매개 가능성.** 본 명세서가 제안하는 희생층은 따개비·홍합·굴 등 부착 생물을 의도적으로 유도하거나 자연 착생 상태로 두는 구성을 포함한다. 그런데 선체에 부착생물이 쌓이는 현상은, 국제해사기구(IMO)가 2011년 결의 MEPC.207(62)로 채택한 「선박 부착생물의 통제 및 관리에 관한 지침(2011 Guidelines for the control and management of ships' biofouling to minimize the transfer of invasive aquatic species)」에서 외래 수생생물 이동의 중요한 수단으로 서술되어 있으며, 이 결의는 회원국에 지침의 이행을 요청하고 있다. 또한 일부 국가와 지역은 입항 선박에 부착생물 관리를 요구하는 자체 규정을 두고 있다. 예를 들어 뉴질랜드 1차산업부(MPI)의 Craft Risk Management Standard는 2018년부터 입항 선박에 부착생물이 없는 선체(대부분의 선박에서 점액층 정도만 허용)를 요구하는 것으로 알려져 있고(이후 개정·통합됨), 미국 캘리포니아주도 IMO 지침에 맞춘 선체 부착생물 관리 규정(California Code of Regulations, title 2, section 2298.1 et seq.)을 두고 있다. 각 규정의 현재 세부 요건은 개정될 수 있으므로 실제 적용 전에 확인이 필요하다.
 
 따라서 본 명세서의 생물 착생 희생층 구성은 다음의 한계를 가진다.
 * 국제 지침과 기항국 규정의 취지와 충돌할 수 있으며, 특정 항로나 기항지에서는 적용이 제한될 수 있다.
 * 탈락하거나 박리되는 부착생물이 살아있는 개체나 유생을 포함하여 다른 해역으로 확산될 가능성을 본 명세서는 배제하지 않는다.
-* 본 명세서의 환경 친화성 서술(0.7절)은 합성수지계 미세플라스틱 완화 측면에 한정되며, 외래종 이동 위험의 완화를 의미하지 않는다.
 * 선체 부착생물층에는 따개비 등 대형 생물뿐 아니라 세균·미세조류·원생생물로 이루어진 생물막이 함께 형성되며, 홍합·굴 같은 이매패는 여과 섭식으로 세균과 바이러스를 축적할 수 있다는 문헌이 있다. 따라서 미생물과 바이러스가 부착생물과 함께 운반될 가능성을 본 명세서는 배제하지 않는다. 다만 세균에 관해서는 상선 외부 선체의 부착생물에서 병원성 *Vibrio parahaemolyticus*가 검출되었다는 보고가 있으나, 바이러스에 관해서는 외부 선체의 생물 착생층을 직접 조사한 연구를 확인하지 못했으며, 바이러스 관련 문헌들은 주로 밸러스트 탱크 내부 생물막과 오염된 연안·양식 환경의 조개류를 대상으로 한다. 바이러스가 존재한다는 것과 사람이나 동물에게 병을 일으킨다는 것은 별개이다.
 
-생물살멸형 방오도료 기반 방식은 비표적 생물에 대한 화학적 영향을 수반할 수 있고, 생물 착생 희생층 방식은 외래종 및 미생물·바이러스의 이동 매개 가능성을 수반할 수 있으며, 생물이 없는 어블레이티브 카트리지 방식도 탈락 물질(재질에 따라 달라짐)의 해양 환경 영향을 별도로 평가해야 한다. 어느 방식을 선택하더라도 자연생태계 보존 관점에서의 영향 가능성을 배제할 수 없으며, 운용 주체에 의한 지속적인 관리와 통제가 필요하다. 본 명세서는 이들 방식의 환경적 우열을 단정하지 않는다.
+**방식별 환경 영향.** 생물살멸형 방오도료 기반 방식은 비표적 생물에 대한 화학적 영향을 수반할 수 있고, 생물 착생 희생층 방식은 외래종 및 미생물·바이러스의 이동 매개 가능성을 수반할 수 있으며, 생물이 없는 어블레이티브 카트리지 방식도 탈락 물질(재질에 따라 달라짐)의 해양 환경 영향을 별도로 평가해야 한다. 어느 방식을 선택하더라도 자연생태계 보존 관점에서의 영향 가능성을 배제할 수 없으며, 운용 주체에 의한 지속적인 관리와 통제가 필요하다. 본 명세서는 이들 방식의 환경적 우열을 단정하지 않는다.
 
-실제 구현·운용 주체는 (1) 운항 및 기항 해역의 부착생물·생물안전 규정을 사전에 확인하고, (2) 착생 생물을 해당 운항 해역의 토착종으로 한정하는 방안, 해역 이동 시 제거·불활성화 절차와 기록 관리(수중 세척 자체가 살아있는 생물과 미생물의 방출을 늘릴 수 있다는 정책 브리프 서술이 있으므로 방법 선택에 유의해야 한다), 또는 생물 착생 대신 생물이 없는 정밀 어블레이티브 카트리지 희생층(2장 [L1] 참조)을 사용하는 방안 등을 자체 위험성 평가로 검토하여야 한다. 위 방안의 효과와 규정 적합성은 본 명세서에서 검증되지 않았다. 본 조항은 기술 사상의 개시 범위를 바꾸지 않고, 알려진 한계와 위험을 함께 고지하기 위한 것이다.
+**규제 준수 권고.** 구현·운용 주체는 항해하는 항로(경유·기항 해역 전체)에 적용되는 규제를 모두 확인할 것을 권고한다. 확인 대상은 IMO 등 국제기구가 채택한 협약·지침(AFS 협약 등)과 논의 동향, 지역·환경 규제 기구(EU 해양전략 프레임워크 지침 등)의 정책과 협의 내용, 운항·기항 해역(영해, 배타적경제수역, 항만 등)의 연안국·기항국 규정과 국가 표준, 극지 등 특별 해역의 별도 환경 체계, 선급 규칙, 표준규격(ISO 등)이다. 채택 전 논의는 구속력이 없어 동향 참고에 그치고, 채택·시행된 규정을 따른다. 규정들의 요건이 서로 다르면 항로 전체를 기준으로 더 엄격한 요건을 우선 검토하되(AFS 협약 제1조(3): 국제법에 부합하는 범위에서 국가의 더 엄격한 조치를 협약이 막지 않는다), 규정 간 우열은 본 명세서가 정하지 않는다. 본 명세서의 권고는 구속력 있는 법령·조약·기항국 규정에 우선하지 않으며, 그러한 규제가 있으면 그 규제를 따른다.
+
+**구현·운용 주체의 검토 사항.** 자체 위험성 평가로 착생 생물을 해당 운항 해역의 토착종으로 한정하는 방안, 해역 이동 시 제거·불활성화 절차와 기록 관리(수중 세척 자체가 살아있는 생물과 미생물의 방출을 늘릴 수 있다는 정책 브리프 서술이 있으므로 방법 선택에 유의해야 한다), 또는 생물 착생 대신 생물이 없는 정밀 어블레이티브 카트리지 희생층(2장 [L1] 참조)을 사용하는 방안 등을 검토하여야 한다. 위 방안의 효과와 규정 적합성은 본 명세서에서 검증되지 않았다. 본 조항은 기술 사상의 개시 범위를 바꾸지 않고, 알려진 한계와 위험을 함께 고지하기 위한 것이다.
+
 
 ---
 
@@ -70,7 +74,10 @@
 * v1.8 (2026-09-28): 리포명 케밥케이스 표기 정제(Max-Life-Ice-Belt), 8.1절 계정 네임스페이스(soma-moa 조직 계정 이관 반영) 및 참조 경로 통합 정정, Appendix C AI 고지 문구 생태계 표준 표기로 통일, Appendix D CITATION.cff URL 정정 반영.
 * v1.9 (2026-09-28): 0.9절 신설 — 생물 착생 희생층의 외래종 및 미생물·바이러스 이동 매개 가능성과 IMO 부착생물 관리 지침·기항국 규정 관련 한계 고지, 0.7절 환경 친화성 서술의 범위 명확화, 5장에 부착생물 관리 규정과의 관계 명시, 8.2절 관련 규정·지침 출처 추가, Appendix D CITATION.cff URL 표기 및 버전 갱신.
 * v1.91 (2026-09-28): 0.9절 보강 — 외부 선체 세균 검출 보고와 바이러스 직접 연구 부재를 구분한 미생물·바이러스 이동 가능성 항목, 수중 세척 자체의 생물·미생물 방출 단서, 방오도료·생물 착생·무생물 카트리지 방식의 환경 영향 병기 및 환경적 우열 미단정 조항 추가. 8.2절 참고문헌 서지 보완 및 방오도료 관련 자료 추가. Appendix B·D 버전 갱신.
-* v1.92 (2026-09-28): 8.2절 미기재 서지 확정 — Konstantinou(2004), Soroldoni(2018), Torres(2021), Turner(2021), Tamburri(2021), Floerl 외(2005), Woods 외(2012). Appendix B·D 버전 갱신.
+* v1.92 (2026-09-28): 8.2절 미기재 서지 보완 — Konstantinou(2004), Tamburri(2021), Floerl 외(2005), Woods 외(2012)는 서지 확정, Soroldoni(2018), Torres(2021), Turner(2021)는 제목·연도 위주로 기재하고 저자·권·면·DOI는 원문 확인 후 보완. Appendix B·D 버전 갱신.
+* v1.93 (2026-09-28): 0.7절 정비 — AFS 협약 관련 서술을 '규제 대응 보조'에서 '유해 방오 시스템과 성격이 다르나 환경적 우열을 뜻하지 않음'으로 정정, 관련 기구·표준의 방침 검토·적용 권고 및 규정 간 요건이 다를 때 더 엄격한 요건을 우선 검토하되 우선순위는 정하지 않는다는 조항 및 구속력 있는 규제가 있으면 본 명세서의 권고보다 그 규제를 따른다는 문구 추가(AFS 협약 제1조(3) 인용). 권고 검토 대상을 운항·기항 해역의 국가 표준, 지역·환경 규제 기구의 협의 내용, 극지 등 특별 해역 체계로 확장하고 채택 전 논의는 참고로만 두며 항로 전체에 적용되는 규제를 확인하고 더 엄격한 요건을 우선 검토한다는 문구 추가. Appendix B·D 버전 갱신.
+* v1.94 (2026-09-28): 법적·규제 문구 통합 — 0.7절을 공개 목적·법적 지위 고지로 축약하고, 환경 친화성의 범위, 생물 이동 매개, 방식별 환경 영향, 규제 준수 권고, 검토 사항을 0.9절로 일원화. 5장의 중복 서술 통합(중복 문구 정리, 권고 내용 변경 없음). Appendix B·D 버전 갱신.
+* v1.95 (2026-09-28): 0.9절 첫 단락(환경 친화성의 범위)에 "이는 환경적 우열을 뜻하지 않는다" 문구 복원. Appendix B·D 버전 갱신.
 
 ---
 
@@ -135,8 +142,7 @@
 ## 5. 표준 활용 및 법적 경계 명시
 
 * 공공 표준 준용 — ISO 8501 표면 청정도 기준, 선급 Ice Class Rules, IMO AFS 및 EU MSFD 지침을 참고 지표로 준용한다.
-* 법정 설비 비대체성 — 본 시스템은 의무 설치 구조 보강재 및 법정 방오 도료를 직접 대체하지 않으며 독립적 보조 안전 장갑으로 작동한다. 탈락 희생층은 탄산칼슘($CaCO_3$) 기원 성분을 포함하여 환경 기준 대응을 보조한다.
-* 선체 부착생물 관리 규정과의 관계 — 본 시스템은 IMO 부착생물 관리 지침(MEPC.207(62)) 및 기항국의 부착생물·생물안전 규정을 대체하거나 면제하지 않는다. 생물 착생 희생층을 적용할 때의 규정 준수 여부는 실제 구현·운용 주체가 확인하여야 한다(0.9절 참조).
+* 규제 비대체성 — 본 시스템은 의무 설치 구조 보강재, 법정 방오 도료, IMO 부착생물 관리 지침(MEPC.207(62)) 및 기항국의 부착생물·생물안전 규정을 대체하거나 면제하지 않는다. 규제 준수는 실제 구현·운용 주체가 확인하며(0.7, 0.9절 참조), 상세한 준수 권고는 0.9절에 통합하여 고지한다.
 
 ---
 
@@ -171,8 +177,8 @@
 * **국제 표준 및 규격:** ISO 8501, IMO AFS Convention, EU MSFD, 각국 선급(KR, DNV, ABS) Ice Class Rules.
 * **부착생물 관리 관련 지침 및 규정:** IMO Resolution MEPC.207(62) (2011 Guidelines for the control and management of ships' biofouling to minimize the transfer of invasive aquatic species, 2011년 7월 채택), 뉴질랜드 1차산업부(MPI) Craft Risk Management Standard (선박 입항 시 부착생물 관리), California Code of Regulations, title 2, section 2298.1 et seq. (Biofouling Management Regulations). (각 규정의 현재 요건은 원문 확인 필요)
 * **생물막 및 이매패의 미생물 축적 관련 문헌:** Drake LA 외 (2005) *Biological Invasions* 7:969-982; Drake LA, Doblin MA, Dobbs FC (2007) *Marine Pollution Bulletin* 55:333-341, DOI 10.1016/j.marpolbul.2006.11.007; Martinez-Albores A 외 (2020) *Foods* 9(2):129; McLeod C 외 (2017) *Comprehensive Reviews in Food Science and Food Safety* 16(4):692-706; Revilla-Castellanos VJ 외 (2015) "Pathogenic *Vibrio parahaemolyticus* isolated from biofouling on commercial vessels and harbor structures", *Biofouling* 31(3):275-282, DOI 10.1080/08927014.2015.1038526; Georgiades E, Scianni C, Tamburri MN (2023) "Biofilms associated with ship submerged surfaces: implications for ship biofouling management and the environment", *Frontiers in Marine Science* 10:1197366 (정책 브리프); Scianni C 외 (2023) "Balancing the consequences of in-water cleaning of biofouling to improve ship efficiency and reduce biosecurity risk", *Frontiers in Marine Science* 10:1239723 (정책 브리프). (초록 기준, 원문 확인 필요)
-* **방오도료 및 방오 시스템의 환경 영향 관련 자료:** IMO, International Convention on the Control of Harmful Anti-fouling Systems on Ships (AFS, 2001년 채택, 2008년 발효); 유럽해사안전청(EMSA), Anti-fouling 안내 페이지; Thomas KV, Brooks S (2010) "The environmental fate and effects of antifouling paint biocides", *Biofouling* 26(1):73-88, DOI 10.1080/08927010903216564; Konstantinou IK, Albanis TA (2004) "Worldwide occurrence and effects of antifouling paint booster biocides in the aquatic environment: a review", *Environment International* 30:235-248, DOI 10.1016/S0160-4120(03)00176-4; Alzieu C (2000) "Environmental impact of TBT: the French experience", *Science of the Total Environment* 258:99-102. (초록 기준, 원문 확인 필요)
-* **탈락 물질(방오도료 입자)의 환경 영향 관련 자료, 유추 근거:** Soroldoni S, Castro IB, Abreu F, Duarte FA, Choueri RB, Möller OO Jr, Fillmann G, Pinho GLL (2018) "Antifouling paint particles: Sources, occurrence, composition and dynamics", *Water Research* 137:47-56, DOI 10.1016/j.watres.2018.02.064; Torres FG, De-la-Torre GE (2021) "Environmental pollution with antifouling paint particles: Distribution, ecotoxicology, and sustainable alternatives", *Marine Pollution Bulletin* 169:112529, DOI 10.1016/j.marpolbul.2021.112529; Turner A (2021) "Paint particles in the marine environment: An overlooked component of microplastics", *Water Research X* 12:100110, DOI 10.1016/j.wroa.2021.100110, PMID 34401707. 이들은 살생물질을 함유한 방오도료 입자에 관한 것이며, 살생물질이 없는 어블레이티브 카트리지 재질에 대한 직접 근거는 아니다. (초록 기준)
+* **방오도료 및 방오 시스템의 환경 영향 관련 자료:** IMO, International Convention on the Control of Harmful Anti-fouling Systems on Ships (AFS, 2001년 채택, 2008년 발효, 본문 제1조(3) 인용); 유럽해사안전청(EMSA), Anti-fouling 안내 페이지; Thomas KV, Brooks S (2010) "The environmental fate and effects of antifouling paint biocides", *Biofouling* 26(1):73-88, DOI 10.1080/08927010903216564; Konstantinou IK, Albanis TA (2004) "Worldwide occurrence and effects of antifouling paint booster biocides in the aquatic environment: a review", *Environment International* 30:235-248, DOI 10.1016/S0160-4120(03)00176-4; Alzieu C (2000) "Environmental impact of TBT: the French experience", *Science of the Total Environment* 258:99-102. (초록 기준, 원문 확인 필요)
+* **탈락 물질(방오도료 입자)의 환경 영향 관련 자료, 유추 근거:** Soroldoni S, Castro IB, Abreu F, Duarte FA, Choueri RB, Möller OO Jr, Fillmann G, Pinho GLL (2018) "Antifouling paint particles: Sources, occurrence, composition and dynamics" (학술지·권·면·DOI 확인 필요); "Environmental pollution with antifouling paint particles: Distribution, ecotoxicology, and sustainable alternatives" (2021), *Marine Pollution Bulletin* 169:112529 (저자·DOI 확인 필요); "Paint particles in the marine environment: An overlooked component of microplastics" (2021), PMID 34401707 (저자·학술지·DOI 확인 필요). 이들은 살생물질을 함유한 방오도료 입자에 관한 것이며, 살생물질이 없는 어블레이티브 카트리지 재질에 대한 직접 근거는 아니다. (초록 기준)
 * **수중 세척의 생물·오염물질 방출 관련 자료:** Tamburri MN, Georgiades ET, Scianni C, First MR, Ruiz GM, Junemann CE (2021) "Technical Considerations for Development of Policy and Approvals for In-Water Cleaning of Ship Biofouling", *Frontiers in Marine Science* 8:804766, DOI 10.3389/fmars.2021.804766 (정책 브리프); Woods CMC, Floerl O, Jones L (2012) "Biosecurity risks associated with in-water and shore-based marine vessel hull cleaning operations", *Marine Pollution Bulletin* 64:1392-1401, DOI 10.1016/j.marpolbul.2012.04.019 (NIWA 요약 기준, 선박 36척 비교에서 수동 수중 세척 후 생존 개체 비율이 건선거·육상 인양보다 높았음); Floerl O, Norton N, Inglis G, Hayden B, Middleton C, Smith M, Alcock N, Fitridge I (2005) "Efficacy of hull cleaning operations in containing biological material I. Risk assessment", MPI Technical Paper No. 08/12 (뉴질랜드 1차산업부 기술 보고서); Georgiades 외 (2023), Scianni 외 (2023) 정책 브리프(위 참조). (초록·요약 기준, 원문 확인 필요)
 * **공지기술 원용:** Béla Barényi (1951), Automotive Passive Safety Architecture (Crumple Zone & Airbag).
 * **법적 근거:** 대한민국 특허법 제103조, 미국 특허법 35 U.S.C. §273.
@@ -199,7 +205,10 @@
 * Version 1.8 (2026-09-28): Kebab-case repository name normalization (Max-Life-Ice-Belt), Section 8.1 ecosystem repo path/organization namespace correction (soma-moa), Appendix C AI disclosure standard unification, and Appendix D CITATION.cff URL update.
 * Version 1.9 (2026-09-28): Added Section 0.9 (Biosecurity Limitation Notice) on the potential of bio-colonized sacrificial layers to transfer invasive species, microorganisms, and viruses, and on the relevance of the IMO biofouling guidelines and port-state rules; clarified the scope of the environmental statement in Section 0.7; added biofouling-regulation relationship in Section 5; added references in Section 8.2; plain-text URL and version update in Appendix D.
 * Version 1.91 (2026-09-28): Expanded Section 0.9 (bacteria detected in external-hull biofouling versus no direct virus study; in-water-cleaning caveat; environmental effects of biocidal paints, bio-colonized layers, and organism-free cartridges stated side by side without asserting superiority); completed bibliographic details and added anti-fouling references in Section 8.2; updated Appendix B and D versions.
-* Version 1.92 (2026-09-28): Completed previously missing bibliographic details in Section 8.2 (Konstantinou 2004, Soroldoni 2018, Torres 2021, Turner 2021, Tamburri 2021, Floerl 2005, Woods 2012); updated Appendix B and D versions.
+* Version 1.92 (2026-09-28): Completed bibliographic details in Section 8.2 for Konstantinou 2004, Tamburri 2021, Floerl 2005, and Woods 2012; Soroldoni 2018, Torres 2021, and Turner 2021 are listed by title and year pending original-text confirmation of authors, volume, pages, and DOI; updated Appendix B and D versions.
+* Version 1.93 (2026-09-28): Revised Section 0.7 — corrected the AFS Convention statement from supporting regulatory compliance to differing in character from harmful anti-fouling systems without implying environmental superiority; added a recommendation to review and apply the policies of relevant bodies and standards, and to consider the stricter requirement first where rules differ without fixing precedence (citing Article 1(3) of the AFS Convention) and that binding rules prevail over this specification's recommendations, and broadened the recommended review to national standards of the operating sea areas, regional and environmental regulatory bodies, and separate regimes for special sea areas such as polar regions, treating not-yet-adopted discussions as reference only, and identifying the rules applicable along the whole route and considering the stricter requirement across it; updated Appendix B and D versions.
+* Version 1.94 (2026-09-28): Consolidated legal and regulatory wording — condensed Section 0.7 to purpose and legal status, and unified the scope of environmental claims, organism-transfer potential, per-approach environmental effects, regulatory compliance recommendation, and review items in Section 0.9; merged duplicate statements in Section 5 (duplicates removed, recommendations unchanged); updated Appendix B and D versions.
+* Version 1.95 (2026-09-28): Restored, in the first paragraph of Section 0.9, the statement that the difference in character from harmful anti-fouling systems does not imply environmental superiority; updated Appendix B and D versions.
 
 ## Appendix C: AI Assistance Disclosure
 * Technical & Legal Drafting Support: Generic Generative AI Text Refinement & Structuring Tools (범용 생성형 AI 텍스트 정제 및 구조화 도구)
@@ -212,7 +221,7 @@ authors:
   - family-names: "deundeuni"
     given-names: "soma-moa"
 title: "Max-Life-Ice-Belt: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
-version: "1.92"
+version: "1.95"
 date-released: 2026-09-28
 url: "https://github.com/soma-moa/Max-Life-Ice-Belt"
 keywords:
