@@ -1,7 +1,7 @@
-# Max-Life-Ice-Belt — Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors Technical Specification (v1.8 Prior-Art Refined Baseline)
+# Max-Life-Ice-Belt — Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors Technical Specification (v1.9 Prior-Art Refined Baseline)
 
 * Official Document Classification: Defensive Publication / Prior Art
-* Initial Conception Date: 2026-09-02 / Final Revision Date (v1.8): 2026-09-28
+* Initial Conception Date: 2026-09-02 / Final Revision Date (v1.9): 2026-09-28
 * Original IP Holder: soma-moa (Founder / Architect: deundeuni)
 * Official Repository: github.com/soma-moa/Max-Life-Ice-Belt | Official Domain: somamoa.ai.kr
 * Applicable License: Dual-licensed under Creative Commons Attribution 4.0 International (CC BY 4.0) & Apache License 2.0 (Apache-2.0) (Replacing legacy DPL v1.0 as of September 27, 2026)
@@ -35,12 +35,23 @@ This design mechanism is universally applicable to external protective shells ac
 Furthermore, when applied to aircraft and helicopter rotary systems, self-balancing ablation mechanisms and zero-tool quick replacement cartridges based on one-touch clamping slots can be selectively integrated to mitigate dynamic unbalance caused by localized spallation.
 
 ### 0.7 Purpose of Disclosure & Environmental Safety Disclaimer
-This whitepaper is a defensive publication intended to establish public prior art and prevent private patent monopolization. Numerical values, functions, physical configurations, and anticipated performance metrics described herein represent illustrative examples to explain technical concepts and do not limit specific implementations or guarantee absolute performance benchmarks. This system does not automatically replace, modify, or extend statutory classification inspection standards, MARPOL regulations, or IMO anti-fouling rules, functioning solely as a supplementary protective layer. The sacrificial layer comprises calcium carbonate derived from barnacles, mussels, oysters, and synthetic $CaCO_3$ mimetics, mitigating synthetic microplastic discharges. Dislodged particles naturally decompose in ocean environments as natural $CaCO_3$ fragments, supporting compliance with the IMO AFS Convention and the EU Marine Strategy Framework Directive (MSFD).
+This whitepaper is a defensive publication intended to establish public prior art and prevent private patent monopolization. Numerical values, functions, physical configurations, and anticipated performance metrics described herein represent illustrative examples to explain technical concepts and do not limit specific implementations or guarantee absolute performance benchmarks. This system does not automatically replace, modify, or extend statutory classification inspection standards, MARPOL regulations, or IMO anti-fouling rules, functioning solely as a supplementary protective layer. The sacrificial layer comprises calcium carbonate derived from barnacles, mussels, oysters, and synthetic $CaCO_3$ mimetics, mitigating synthetic microplastic discharges. Dislodged particles naturally decompose in ocean environments as natural $CaCO_3$ fragments, supporting compliance with the IMO AFS Convention and the EU Marine Strategy Framework Directive (MSFD). However, the risk of invasive-species transfer is governed by the limitation notice in Section 0.9.
 
 ### 0.8 Independent Conception Recognition & Triple-Defense Clause (v1.4)
 This system design was independently synthesized and re-architected from the creator's field experience after reviewing existing public principles ($CaCO_3$ biomineralization, sacrificial anodes, automotive crumple zones).
 The creator does not claim sole initial discovery of individual underlying principles, fully acknowledging that similar technical motifs may have been conceived independently by other researchers or field engineers.
 The sole purpose of this disclosure is to register these technical specifications into the public domain as prior art, providing grounds for rejecting subsequent private patent claims by third parties regarding novelty and inventive step. The Korean original text serves as the primary governing standard; in the event of interpretive conflicts in foreign language translations, the Korean text takes precedence.
+
+### 0.9 Biosecurity Limitation Notice: Organism-Transfer Potential and Port-State Rules
+The sacrificial layer proposed in this specification includes configurations in which barnacles, mussels, oysters, and similar attached organisms are intentionally induced or left to settle naturally. However, biofouling accumulated on ship hulls is described, in the International Maritime Organization's 2011 Guidelines for the control and management of ships' biofouling to minimize the transfer of invasive aquatic species (resolution MEPC.207(62)), as an important means of transferring invasive aquatic species, and that resolution requests Member States to take action in applying the Guidelines. In addition, some countries and regions have their own rules requiring biofouling management for arriving vessels. For example, the Craft Risk Management Standard of New Zealand's Ministry for Primary Industries (MPI) has been reported to require, since 2018, that arriving vessels have a clean hull (for most vessels, no biofouling beyond a slime layer), and it has since been revised and consolidated; the U.S. State of California also has biofouling management regulations aligned with the IMO Guidelines (California Code of Regulations, title 2, section 2298.1 et seq.). The current details of each rule may have been revised and should be checked before actual application.
+
+Accordingly, the bio-colonized sacrificial layer configuration in this specification has the following limitations.
+* It may conflict with the intent of the international guidelines and port-state rules, and its application may be restricted on certain routes or at certain ports of call.
+* This specification does not exclude the possibility that dislodged or ablated organisms, including live individuals or larvae, may spread to other sea areas.
+* The environmental statement in Section 0.7 is limited to mitigating synthetic microplastic discharge and does not imply mitigation of invasive-species transfer risk.
+* Biofouling on a hull includes, besides large organisms such as barnacles, a biofilm of bacteria, microalgae, and protozoa, and the literature indicates that filter-feeding bivalves such as mussels and oysters can accumulate bacteria and viruses. This specification therefore does not exclude the possibility that microorganisms and viruses are carried together with the attached organisms. However, for bacteria, pathogenic *Vibrio parahaemolyticus* has been reported in biofouling on the external hulls of commercial vessels, whereas for viruses no study directly examining the external-hull biofouling layer was found; the virus-related literature mainly concerns biofilms inside ballast tanks and bivalves in contaminated coastal or aquaculture environments. The presence of a virus is a separate matter from whether it causes disease in humans or animals.
+
+Implementing and operating entities should examine, through their own risk assessment, options such as (1) checking in advance the biofouling and biosecurity rules of the sea areas and ports of call concerned, and (2) limiting settled organisms to species native to the operating sea area, removal or inactivation procedures with record keeping when moving between sea areas (noting that policy briefs describe in-water cleaning itself as potentially increasing the release of living organisms and microbes, so the method must be chosen with care), or using an organism-free precision ablative cartridge sacrificial layer instead of a bio-colonized one (see [L1] in Section 2). The effectiveness and regulatory suitability of these options have not been verified in this specification. This clause does not change the scope of the disclosed technical concepts; it is intended to disclose known limitations and risks alongside them.
 
 ---
 
@@ -55,6 +66,7 @@ The sole purpose of this disclosure is to register these technical specification
 * v1.6 (2026-09-06): Integrated cross-references to upper survival architecture (`ARCHITECTURE_STRATEGY v3.2.4`), APU controller (`chiplet-apu-multi-system-survival-architecture v2.6`), and CWP 4-hardware mechanisms.
 * v1.7 (2026-09-27): Updated licensing scheme to standard dual-licensing (CC BY 4.0 & Apache-2.0) as of September 27, 2026, linked directly to root LICENSE files, replacing legacy DPL v1.0.
 * v1.8 (2026-09-28): Normalized repository name to kebab-case (Max-Life-Ice-Belt), corrected Section 8.1 ecosystem repo paths and organization namespaces (`soma-moa`), standardized Appendix C AI assistance disclosure, and updated Appendix D CITATION.cff URL.
+* v1.9 (2026-09-28): Added Section 0.9 (Biosecurity Limitation Notice) on the potential of bio-colonized sacrificial layers to transfer invasive species, microorganisms, and viruses, and the relevance of the IMO biofouling guidelines and port-state rules; clarified the scope of the environmental statement in Section 0.7; stated the relationship to biofouling regulations in Section 5; added references in Section 8.2; updated the Appendix D CITATION.cff URL format and version.
 
 ---
 
@@ -120,6 +132,7 @@ The adhesion and spallation prediction module applied in this system is not rest
 
 * Public Standard Reference — Adopts ISO 8501 surface cleanliness standards, classification Ice Class Rules, IMO AFS, and EU MSFD guidelines as reference benchmarks.
 * Non-Replacement of Statutory Equipment — Does not directly replace mandatory structural stiffeners or statutory anti-fouling coatings, operating as a supplementary protective layer. Spalled sacrificial particles contain calcium carbonate ($CaCO_3$), assisting environmental compliance.
+* Relationship to Biofouling Regulations — This system does not replace or exempt vessels from the IMO biofouling guidelines (MEPC.207(62)) or the biofouling and biosecurity rules of port states. Implementing and operating entities must verify regulatory compliance when applying a bio-colonized sacrificial layer (see Section 0.9).
 
 ---
 
@@ -152,6 +165,8 @@ The adhesion and spallation prediction module applied in this system is not rest
 
 ### 8.2 Standards, Precedents & References
 * **International Standards:** ISO 8501, IMO AFS Convention, EU MSFD, Classification Society Ice Class Rules (KR, DNV, ABS).
+* **Biofouling Management Guidelines & Regulations:** IMO Resolution MEPC.207(62) (2011 Guidelines for the control and management of ships' biofouling to minimize the transfer of invasive aquatic species, adopted July 2011); New Zealand Ministry for Primary Industries (MPI) Craft Risk Management Standard (biofouling management for arriving vessels); California Code of Regulations, title 2, section 2298.1 et seq. (Biofouling Management Regulations). (Current requirements of each should be checked against the original texts.)
+* **Biofilm and Bivalve Microbial Accumulation Literature:** Drake LA et al. (2005) *Biological Invasions* 7:969-982; Drake LA, Doblin MA, Dobbs FC (2007) *Marine Pollution Bulletin* 55:333-341, DOI 10.1016/j.marpolbul.2006.11.007; Martinez-Albores A et al. (2020) *Foods* 9(2):129; McLeod C et al. (2017) *Comprehensive Reviews in Food Science and Food Safety* 16(4):692-706; Revilla-Castellanos VJ et al. (2015) "Pathogenic *Vibrio parahaemolyticus* isolated from biofouling on commercial vessels and harbor structures", *Biofouling* 31(3):275-282, DOI 10.1080/08927014.2015.1038526; Georgiades E, Scianni C, Tamburri MN (2023) "Biofilms associated with ship submerged surfaces: implications for ship biofouling management and the environment", *Frontiers in Marine Science* 10:1197366 (policy brief); Scianni C et al. (2023) "Balancing the consequences of in-water cleaning of biofouling to improve ship efficiency and reduce biosecurity risk", *Frontiers in Marine Science* 10:1239723 (policy brief). (Abstract-level; verify against originals.)
 * **Prior Art References:** Béla Barényi (1951), Automotive Passive Safety Architecture (Crumple Zone & Airbag).
 * **Legal Precedents:** Article 103 of the Korean Patent Act, 35 U.S.C. §273.
 * **Document Completeness:** This document possesses standalone technical completeness as a unit specification.
@@ -175,6 +190,7 @@ Textual expressions in this document are published under the Creative Commons At
 * Version 1.6 (2026-09-06): Integrated cross-references to upper survival architecture (ARCHITECTURE_STRATEGY v3.2.4), APU controller (chiplet-apu-multi-system-survival-architecture v2.6), and CWP 4-Hardware mechanisms.
 * Version 1.7 (2026-09-27): Replaced legacy DPL v1.0 with standard dual licensing (CC BY 4.0 & Apache-2.0) as of 2026-09-27, strictly linked to root LICENSE file.
 * Version 1.8 (2026-09-28): Kebab-case repository name normalization (Max-Life-Ice-Belt), Section 8.1 ecosystem repo path/organization namespace correction (soma-moa), Appendix C AI disclosure standard unification, and Appendix D CITATION.cff URL update.
+* Version 1.9 (2026-09-28): Added Section 0.9 (Biosecurity Limitation Notice) on the potential of bio-colonized sacrificial layers to transfer invasive species, microorganisms, and viruses, and on the relevance of the IMO biofouling guidelines and port-state rules; clarified the scope of the environmental statement in Section 0.7; added biofouling-regulation relationship in Section 5; added references in Section 8.2; plain-text URL and version update in Appendix D.
 
 ## Appendix C: AI Assistance Disclosure
 * Technical & Legal Drafting Support: Generic Generative AI Text Refinement & Structuring Tools (범용 생성형 AI 텍스트 정제 및 구조화 도구)
@@ -187,9 +203,9 @@ authors:
   - family-names: "deundeuni"
     given-names: "soma-moa"
 title: "Max-Life-Ice-Belt: Sacrificial Self-Regenerating Armor System with Clamping Scaffold for Icebreakers, Marine Structures, and Aero-Rotors"
-version: "1.8"
+version: "1.9"
 date-released: 2026-09-28
-url: "[https://github.com/soma-moa/Max-Life-Ice-Belt](https://github.com/soma-moa/Max-Life-Ice-Belt)"
+url: "https://github.com/soma-moa/Max-Life-Ice-Belt"
 keywords:
   - "Defensive Publication"
   - "Prior Art"
@@ -203,3 +219,4 @@ keywords:
   - "Mussel Eco-Armor"
   - "Oyster Eco-Armor"
   - "Spontaneous Bio-Adhesion"
+```
