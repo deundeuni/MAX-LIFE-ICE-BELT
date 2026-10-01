@@ -6,6 +6,22 @@
 
 ---
 
+## v1.97 (2026-10-01)
+
+**한국어** — 
+* 0.3절 및 4장 정제: 센서 장착 시 비관통·무용접 원칙 명시, 4장 제어 격리 규정의 적용 범위를 AI/센서 모듈로 한정.
+* 0.9절 개편: 생물 착생형은 고정식 구조물 실시에 우선 적용하고, 다해역 선박에는 비생물 카트리지형을 우선 검토하도록 전환 (근거: 부유 유생 제어 불가에 따른 토착종 한정 실효성 한계, 기항국 생물안전 규제, 탈락 군집 방출의 확산 위험 미검증. 타이틀(생물 희생장갑 강조)과의 방향 차이는 의도적 선택임). 방식별 탈락물 환경 영향 평가 필요성 명시. 바이러스 관련 단서, 수중 세척 주의, AFS 제1조(3) 서술 유지.
+* 0.10절 신설: 설계자 한계 고지(선행기술 조사 범위 한계 및 후부착/점진마모/클램핑 미조사, 물리 모델 단순화, 생물/극지 착생 미검증, 클램프 동결/피로 미시험, LS-DYNA 미수행, 금속 판재 가공·시공 한정 경험 명시).
+* 3장 B절 보강: 점진 마모형 및 방향성 곡면 스캐폴드 실시 형태 추가, 얼음 파괴 흡수 에너지 항($E_{ice\_fail}$) 추가, 항진 저항·와류 검증 필요성 표기, LS-DYNA 준용 서술을 0.10절 미수행 고지로 대체.
+* 8.2절 개정: US4351255, US4715305, US5325803 및 Lindqvist(1989) 모델 공지기술 원용(원문 확인 필요), 기술 기여 범위를 개시 실시 형태 범주로 한정.
+
+**English** — 
+* Sections 0.3 & 4 Refinement: Established non-penetrative sensor mounting principles; limited Ch. 4 isolation controls to AI/sensor modules.
+* Section 0.9 Reorganization: Shifted priority: bio-adhesion type is preferred for fixed structures, while non-biological cartridge type is preferred for multi-region vessels (Rationale: unfeasibility of native-species restriction via planktonic larvae control, port-state biosecurity regulations, and unverified risks of detached cluster dispersal; the difference in direction from the title's emphasis on bio-adhesion armor is an intentional choice). Preserved viral pathogen caveats, in-water cleaning cautions, and AFS Article 1(3) references.
+* Section 0.10 Addition: Established Designer Limitations Notice acknowledging prior art search boundaries (uninvestigated post-attachment/clamping prior art), simplified physical models, unverified polar bio-adhesion, un-tested clamp freezing, unexecuted LS-DYNA simulations, and background limited to sheet metal processing.
+* Chapter 3.B Refinement: Added gradual wear and directional curved scaffold embodiments, incorporated $E_{ice\_fail}$ energy term, noted hydrodynamic drag/vortex verification requirements, replaced LS-DYNA applicability statement with Section 0.10 non-execution disclosure.
+* Section 8.2 Revision: Cited US4351255, US4715305, US5325803, and Lindqvist (1989) model (pending primary source verification); strictly bounded scope to "embodiments disclosed in this document."
+
 ## v1.96 (2026-09-28)
 
 **한국어** — 버전 변경 이력을 README에서 분리하여 HISTORY.md(한글·영문 병기)로 이관하고, README의 1장과 Appendix B는 요약·포인터로 대체(본문 내용 변경 없음). Appendix D 버전 갱신.
